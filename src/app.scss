@@ -75,10 +75,6 @@ p{
 
     margin-top: 30px;
     
-    p{
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
 }
 .social{
     display: flex;
@@ -91,4 +87,27 @@ p{
     .twitter{
         margin-left: 25px;
     }
+}
+h1,h2,p{
+    margin-bottom: 30px;
+}
+.fundoBM{
+    background-image: url('/src/img/palestra.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 50px 80px 50px 80px;
+    align-items: center;
+
+    .logoFundo{
+        max-width: 180px;
+        max-height: 180px;
+        float:left;
+        margin-right: 65px;
+    }
+    h1, p{
+        color: #fff;      
+    }
+}
+.business{
+    float: right;
 }
