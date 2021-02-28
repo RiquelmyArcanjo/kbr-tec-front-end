@@ -9,7 +9,6 @@ $gradBtn: linear-gradient(360deg, #1D737E -74.42%, #4FB9C7 154.17%);
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-
     color: #000000;
 }
 @mixin tipografia-Oswald {
@@ -256,7 +255,7 @@ h1,h2,p{
     position: absolute;
     top: -15%;
     left: -5%;
-} 
+}
 
 .event{
     padding-left:30px;
@@ -277,6 +276,10 @@ h1,h2,p{
 .back2Color{
     background-image: linear-gradient(to right, $bgTurquoise 50%, #000 50%);
 }
+.back2Color2{
+    background-image: linear-gradient(to right, #000 50%, $bgTurquoise 50%);
+    padding-bottom: 125px;
+}
 //etapas inscricao
 .steps-list {
     display: flex;
@@ -296,7 +299,7 @@ h1,h2,p{
 .green-area {
     width: 40px;
     height: 40px;
-    background-color: #C2FF01;
+    background-color: $bgGreen;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -327,3 +330,188 @@ h1,h2,p{
     transform: translate(0, -2rem);
     width: 100%;
 }
+@mixin sides {
+    position: relative;
+    padding: 50px 50px 0 50px;
+        h2,p{
+        color:#fff;
+        margin-bottom: 30px;
+        }
+}
+//lside rside
+.lside{
+    @include sides;
+    background: #000;
+}
+.rside{
+    @include sides;
+    background: $bgTurquoise;
+}
+.pcheck{
+    position: relative;
+    padding-left: 50px;
+}
+.pcheck::before{
+    content: '✔';
+    top: -3px;
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00AA54;
+    background-color: $bgGreen;
+    font-weight: 700;
+}
+#money{
+    position: relative;
+    margin: auto;
+    margin-top: -100px;
+    height: 200px;
+}
+/*#pAspas{
+    text-align: center;
+    max-width: 300px;
+    margin: 4rem auto;
+    position: relative;
+    font-size: 14px;
+
+}
+#pAspas::before{
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: -10px;
+    width: 25px;
+    height: 25px;
+    background: url('/src/img/aspas.png') center/contain;
+    background-repeat: no-repeat;
+}
+#pAspas::after{
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: -10px;
+    width: 25px;
+    height: 25px;
+    transform: scale(-1, 1);
+    background: url('/src/img/aspas.png') center/contain;
+    background-repeat: no-repeat;
+}*/
+.price{
+    @include tipografia-Oswald;
+    font-size: 25px;
+    line-height: 37px;
+}
+.left-price{
+    width: 100%;
+    //height: 131px;
+    background: #D40033;
+    border-radius: 20px;
+    //padding-top:28px;
+    .desc-price-l{
+        @include tipografia-Oswald;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .price-l{
+        @include tipografia-Oswald;
+        font-size: 40.5797px;
+        line-height: 60px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        
+        color: #FFFFFF;
+    } 
+    
+}
+
+.right-price{
+    width: 100%;
+    //height: 131px;
+    background: #FFFFFF;
+    border: 2px solid #D40033;
+    box-sizing: border-box;
+    border-radius: 20px;
+    //padding-top:24px;
+    .desc-price-r{
+        @include tipografia-Oswald;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 136.5%;
+        color: #000000;
+        text-transform: lowercase;
+    }
+    .price-r{
+        @include tipografia-Oswald;
+        font-size: 40.5797px;
+        line-height: 60px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #D40033;   
+    } 
+}
+.left-price{
+    width: 100%;
+    height: 131px;
+    background: #D40033;
+    border-radius: 20px;
+    //padding-top:28px;
+    .desc-price-l{
+        @include tipografia-Oswald;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .price-l{
+        @include tipografia-Oswald;
+        font-size: 40.5797px;
+        line-height: 60px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        
+        color: #FFFFFF;
+    } 
+    
+}
+.right-price{
+    width: 100%;
+    height: 131px;
+    background: #FFFFFF;
+    border: 2px solid #D40033;
+    box-sizing: border-box;
+    border-radius: 20px;
+    //padding-top:24px;
+    .desc-price-r{
+        @include tipografia-Oswald;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 136.5%;
+        color: #000000;
+        text-transform: lowercase;
+    }
+    .price-r{
+        @include tipografia-Oswald;
+        font-size: 40.5797px;
+        line-height: 60px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #D40033;   
+    } 
+}
+.prices{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
