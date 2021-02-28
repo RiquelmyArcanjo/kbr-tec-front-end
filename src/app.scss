@@ -30,9 +30,10 @@ body{
 }
 .subtitle{
     @include tipografia-Oswald;
-    font-size: 18px;
-    line-height: 27px;
-    letter-spacing: 0.2em;
+    font-size: 25px;
+    line-height: 37px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 .subtitle2{
     @include tipografia-Oswald;
@@ -46,16 +47,13 @@ p{
 .text-justify{
     text-align: justify;
 }
-.navBM{padding:0;
-    .containerFluidBM{
-        padding: 0;
 
-        .logo{
-            max-width: 62%;
-        }
-        .home{margin-left: 70%;}
-    }
+.logo{
+     max-width: 62%;
 }
+.home{margin-left: 70%;}
+
+
 .btn-info-BM{
     background: $gradBtn;
     border-radius: 57px;
@@ -112,18 +110,30 @@ h1,h2,p{
     margin-bottom: 30px;
 }
 .bgBM{
-    background-image: url('/src/img/palestra.jpg');
-    background-size: 100%;
+    background-image: url('/src/img/background.jpg');
+    background-size: 100%; 
     background-repeat: no-repeat;
     padding: 40px 80px 40px 80px;
-
     .logoFundo{
         width: 100px;
         float:left;
         margin-right: 35px;
         margin-top: 20px;
     }
-    h1, p{
+    h2, p{
+        color: #fff;
+        margin-bottom: 0px;
+    }
+    h2{
+        margin-top: 20px;
+    }
+}
+.bgBM2{
+    background-image: url('/src/img/background2.jpg');
+    background-size: 100%; 
+    background-repeat: no-repeat;
+    padding: 40px 80px 40px 80px;
+    h2, p{
         color: #fff;
         margin-bottom: 0px;
     }
