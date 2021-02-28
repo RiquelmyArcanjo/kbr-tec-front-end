@@ -79,6 +79,18 @@ p{
     background: $bgGreen;
     border-radius: 30px;
     border: none;
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 250.0%;
+    /* or 64px */
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #000000;
 }
 .homeImg{
     position: relative;
@@ -260,7 +272,58 @@ h1,h2,p{
 
 .d-flex{
     flex-wrap: wrap;
+    flex-flow: wrap;
 }
 .back2Color{
     background-image: linear-gradient(to right, $bgTurquoise 50%, #000 50%);
+}
+//etapas inscricao
+.steps-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 0 0 25%;
+    margin-bottom: 3rem;
+    position: relative;
+}
+.green-area {
+    width: 40px;
+    height: 40px;
+    background-color: #C2FF01;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.number {
+    font-weight: 700;
+    transform: rotate(-45deg);
+    font-family: "Open Sans",Arial,sans-serif;
+    font-size: 20px;
+}
+
+.desc {
+    text-align: center;
+    font-size: 14px;
+    max-width: 190px;
+}
+
+.inscricao {
+    background: linear-gradient(to right top, #32848f, #a3eaf3);
+    padding: 4rem 0;
+    border-radius: 20px;
+
+    z-index: 2;
+    margin: auto;
+    transform: translate(0, -2rem);
+    width: 100%;
 }
