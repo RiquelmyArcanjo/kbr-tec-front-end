@@ -1,27 +1,38 @@
+//Variáveis
 $bgTurquoise: #48afbc;
 $bgGreen: #C2FF01;
 $gradHome: linear-gradient(220.36deg, rgba(25, 112, 129, 0.32) 0%, rgba(247, 247, 249, 0) 64.63%);
 $gradBtn: linear-gradient(360deg, #1D737E -74.42%, #4FB9C7 154.17%);
 $black: #000;
 
+//Mixins
 @mixin tipografia-Fira-Sans {
     font-family: 'Fira Sans', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    color: #000000;
+    color: $black;
 }
 @mixin tipografia-Oswald {
     font-family: 'Oswald';
     font-style: normal;
     font-weight: bold;
     text-transform: uppercase;
-    color: #000000;
+    color: $black;
+}
+@mixin sides {
+    position: relative;
+    padding: 50px 50px 0 50px;
+        h2,p{
+        color:#fff;
+        margin-bottom: 30px;
+        }
 }
 body{
     background: $gradHome;
 }
+//Fontes
 .title{
     @include tipografia-Oswald;
     font-size: 30px;
@@ -58,13 +69,16 @@ body{
     color: $bgGreen;
 }
 .greenFont {
-    background: #000;
+    background: $black;
     color: #C2FF01;
     padding: 0 1rem;
     border-radius: 10px;
     font-weight: 700;
     white-space: nowrap;
     font-family: "Open Sans",Arial,sans-serif;
+}
+h1,h2,p{
+    margin-bottom: 30px;
 }
 p{
     font-family: 'Fira Sans', sans-serif;
@@ -78,7 +92,12 @@ p{
 }
 .home{margin-left: 70%;}
 
-
+//flexbox
+.d-flex{
+    flex-wrap: wrap;
+    flex-flow: wrap;
+}
+//Botão da nav
 .btn-info-BM{
     background: $gradBtn;
     border-radius: 57px;
@@ -114,7 +133,7 @@ p{
     letter-spacing: 0.1em;
     text-transform: uppercase;
 
-    color: #000000;
+    color: $black;
 }
 .homeImg{
     position: relative;
@@ -123,8 +142,8 @@ p{
 .homeText{
     position: relative;
     margin-top: 30px;
-    
 }
+//Redes sociais
 .social{
     display: flex;
     margin-top: 25px;
@@ -142,9 +161,7 @@ p{
         width: 40px;
     }
 }
-h1,h2,p{
-    margin-bottom: 30px;
-}
+//Fundo descrição
 .bgBM{
     background-image: url('/src/img/background.png');
     background-size: 100%; 
@@ -164,6 +181,7 @@ h1,h2,p{
         margin-top: 20px;
     }
 }
+//Fundo descrição 2
 .bgBM2{
     background-image: url('/src/img/background2.png');
     background-size: 100%; 
@@ -196,9 +214,9 @@ h1,h2,p{
         margin-bottom: 30px;
     }
 }
-
+//Anos
 .years{
-    background: #000;
+    background: $black;
     position: relative;
     padding-top: 50px;
     padding-left: 50px;
@@ -207,7 +225,7 @@ h1,h2,p{
         margin-bottom: 30px;
     }
 }
-
+//Linha do tempo
 .timeline {  
     border-left: 3px solid #A2C43A;
     border-bottom-right-radius: 4px;
@@ -247,14 +265,14 @@ h1,h2,p{
 .timeline .event:after {
     box-shadow: 0 0 0 3px #A2C43A;
     left: -55.8px;
-    background: #000;
+    background: $black;
     border-radius: 50%;
     height: 9px;
     width: 9px;
     content: "";
     top: 12px;
 }
-
+//Ano before
 .year{
     position: relative;
     padding-left:40px;
@@ -277,19 +295,15 @@ h1,h2,p{
  @include tipografia-Fira-Sans;
  width: 150px;
 }
-
-.d-flex{
-    flex-wrap: wrap;
-    flex-flow: wrap;
-}
+//Fundos dos containers
 .back2Color{
     background-image: linear-gradient(to right, $bgTurquoise 50%, #000 50%);
 }
 .back2Color2{
     background-image: linear-gradient(to right, #000 50%, $bgTurquoise 50%);
-    //padding-bottom: 125px;
 }
-//etapas inscricao
+
+//Inscrição
 .steps-list {
     display: flex;
     flex-wrap: wrap;
@@ -322,13 +336,11 @@ h1,h2,p{
     font-family: "Open Sans",Arial,sans-serif;
     font-size: 20px;
 }
-
 .desc {
     text-align: center;
     font-size: 14px;
     max-width: 190px;
 }
-
 .inscricao {
     background: linear-gradient(to right top, #32848f, #a3eaf3);
     padding: 4rem 0;
@@ -339,23 +351,16 @@ h1,h2,p{
     transform: translate(0, -2rem);
     width: 100%;
 }
-@mixin sides {
-    position: relative;
-    padding: 50px 50px 0 50px;
-        h2,p{
-        color:#fff;
-        margin-bottom: 30px;
-        }
-}
-//lside rside
+//Lside e rside
 .lside{
     @include sides;
-    background: #000;
+    background: $black;
 }
 .rside{
     @include sides;
     background: $bgTurquoise;
 }
+//Check
 .pcheck{
     position: relative;
     padding-left: 50px;
@@ -376,41 +381,15 @@ h1,h2,p{
     background-color: $bgGreen;
     font-weight: 700;
 }
+//Icon Dinheiro na mão
 #money{
     position: relative;
     margin: auto;
     margin-top: -100px;
     height: 200px;
 }
-/*#pAspas{
-    text-align: center;
-    max-width: 300px;
-    margin: 4rem auto;
-    position: relative;
-    font-size: 14px;
 
-}
-#pAspas::before{
-    content: '';
-    position: absolute;
-    left: -20px;
-    top: -10px;
-    width: 25px;
-    height: 25px;
-    background: url('src/img/aspas.png') center/contain;
-    background-repeat: no-repeat;
-}
-#pAspas::after{
-    content: '';
-    position: absolute;
-    right: -20px;
-    top: -10px;
-    width: 25px;
-    height: 25px;
-    transform: scale(-1, 1);
-    background: url('src/img/aspas.png') center/contain;
-    background-repeat: no-repeat;
-}*/
+//Preço do Investimento
 .price{
     @include tipografia-Oswald;
     font-size: 25px;
@@ -418,10 +397,8 @@ h1,h2,p{
 }
 .left-price{
     width: 100%;
-    //height: 131px;
     background: #D40033;
     border-radius: 20px;
-    //padding-top:28px;
     .desc-price-l{
         @include tipografia-Oswald;
         font-weight: 600;
@@ -435,27 +412,23 @@ h1,h2,p{
         font-size: 40.5797px;
         line-height: 60px;
         letter-spacing: 0.1em;
-        text-transform: uppercase;
-        
+        text-transform: uppercase;    
         color: #FFFFFF;
     } 
     
 }
-
 .right-price{
     width: 100%;
-    //height: 131px;
     background: #FFFFFF;
     border: 2px solid #D40033;
     box-sizing: border-box;
     border-radius: 20px;
-    //padding-top:24px;
     .desc-price-r{
         @include tipografia-Oswald;
         font-weight: 300;
         font-size: 18px;
         line-height: 136.5%;
-        color: #000000;
+        color: $black;
         text-transform: lowercase;
     }
     .price-r{
@@ -472,7 +445,6 @@ h1,h2,p{
     height: 131px;
     background: #D40033;
     border-radius: 20px;
-    //padding-top:28px;
     .desc-price-l{
         @include tipografia-Oswald;
         font-weight: 600;
@@ -499,13 +471,12 @@ h1,h2,p{
     border: 2px solid #D40033;
     box-sizing: border-box;
     border-radius: 20px;
-    //padding-top:24px;
     .desc-price-r{
         @include tipografia-Oswald;
         font-weight: 300;
         font-size: 18px;
         line-height: 136.5%;
-        color: #000000;
+        color: $black;
         text-transform: lowercase;
     }
     .price-r{
@@ -523,7 +494,7 @@ h1,h2,p{
     justify-content: center;
     align-items: center;
 }
-//clientes
+//Lista Clientes
 .list {
     display: flex;
     flex-wrap: wrap;
@@ -547,18 +518,22 @@ h1,h2,p{
     margin-bottom: 1rem;
   }
 
-  .iconDiv {
+.iconDiv {
     max-width: 100px;
     max-height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .icon {
+}
+.icon {
     max-width: 100%;
     max-height: 100%;
 }
-
+//Rodapé
+.footer{
+    background-color: $black;
+}
+//Media Query
 @media only screen and (max-width: 576px){
     .social{
         display:none;
@@ -628,6 +603,5 @@ h1,h2,p{
         padding: 20px;
     }
 }
-.footer{
-    background-color: $black;
-}
+
+
