@@ -146,7 +146,7 @@ h1,h2,p{
     margin-bottom: 30px;
 }
 .bgBM{
-    background-image: url('/src/img/background.jpg');
+    background-image: url('src/img/background.jpg');
     background-size: 100%; 
     background-repeat: no-repeat;
     padding: 40px 80px 40px 80px;
@@ -165,7 +165,7 @@ h1,h2,p{
     }
 }
 .bgBM2{
-    background-image: url('/src/img/background2.jpg');
+    background-image: url('src/img/background2.jpg');
     background-size: 100%; 
     background-repeat: no-repeat;
     padding: 40px 80px 40px 80px;
@@ -276,7 +276,7 @@ h1,h2,p{
     padding-left:40px;
 }
 .year::before{
-    content: url("/src/img/reticencias.png");
+    content: url("src/img/reticencias.png");
     position: absolute;
     top: -15%;
     left: -5%;
@@ -413,7 +413,7 @@ h1,h2,p{
     top: -10px;
     width: 25px;
     height: 25px;
-    background: url('/src/img/aspas.png') center/contain;
+    background: url('src/img/aspas.png') center/contain;
     background-repeat: no-repeat;
 }
 #pAspas::after{
@@ -424,7 +424,7 @@ h1,h2,p{
     width: 25px;
     height: 25px;
     transform: scale(-1, 1);
-    background: url('/src/img/aspas.png') center/contain;
+    background: url('src/img/aspas.png') center/contain;
     background-repeat: no-repeat;
 }*/
 .price{
