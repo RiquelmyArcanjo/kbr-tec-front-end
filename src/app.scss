@@ -53,7 +53,7 @@ body{
     line-height: 27px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-
+    margin-bottom: 30px;
     color: $bgGreen;
 }
 .greenFont {
@@ -573,3 +573,43 @@ h1,h2,p{
     max-width: 100%;
     max-height: 100%;
 }
+$black: #000;
+@media only screen and (max-width: 992px) {
+    .homeImg{
+      display: none !important;
+    }
+    .bgBM{
+        background-image: none;
+        background-color: $black;
+        padding: 20px;
+        h2{
+            margin-bottom:30px;
+        }
+    }
+    .back2Color{
+        background-image:none;
+    }
+    .years{
+        padding-bottom: 50px;
+    }
+    .businessIcon{
+        display: none;
+    }
+    .subBusiness2{
+        text-align:center;
+    }
+    .bgBM2{
+        background-image: none;
+        background-color: $black;
+        padding: 20px;
+    }
+    .lside{
+        padding:20px;
+    }
+    .rside{
+        padding: 20px 20px 40px 20px;
+    }
+    #money{
+        margin-top:30px;
+    }
+  }
