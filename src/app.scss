@@ -575,6 +575,25 @@ h1,h2,p{
     max-height: 100%;
 }
 $black: #000;
+
+@media only screen and (max-width: 576px){
+    .social{
+        display:none;
+    }
+    #nm{
+        margin-top:30px; text-align: center;
+    }
+    .subBusiness1{
+        text-align:center;
+    }
+    #descNm{
+        text-align: center;
+    }
+    .homeText{
+        text-align: center;
+    }
+}
+
 @media only screen and (max-width: 992px) {
     .homeImg{
       display: none !important;
@@ -588,6 +607,9 @@ $black: #000;
         }
     }
     .back2Color{
+        background-image:none;
+    }
+    .back2Color2{
         background-image:none;
     }
     .years{
@@ -619,4 +641,5 @@ $black: #000;
     .right-price{
         margin-top: 20px;
     }
-  }
+}
+
