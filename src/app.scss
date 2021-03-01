@@ -622,7 +622,7 @@ $black: #000;
         text-align:center;
     }
     .bgBM2{
-        background-image: none;
+        //background-image: none;
         background-color: $black;
         padding: 20px;
     }
@@ -640,6 +640,9 @@ $black: #000;
     }
     .right-price{
         margin-top: 20px;
+    }
+    .bgTuq{
+        padding: 20px;
     }
 }
 
