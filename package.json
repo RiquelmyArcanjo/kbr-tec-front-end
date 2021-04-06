@@ -1,7 +1,7 @@
 {
-  "name": "KBR-TEC",
+  "name": "kbr-tec",
   "version": "1.0.0",
-  "description": "",
+  "description": "Projeto Front-end - Vaga Estágio",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,11 +9,19 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "gulp": "^4.0.2",
-    "gulp-sass": "^4.1.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "gulp-image": "^6.2.1"
-  }
+    "gulp": "^4.0.2",
+    "gulp-image": "^6.2.1",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RiquelmyArcanjo/kbr-tec-front-end.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RiquelmyArcanjo/kbr-tec-front-end/issues"
+  },
+  "homepage": "https://github.com/RiquelmyArcanjo/kbr-tec-front-end#readme"
 }
