@@ -90,15 +90,14 @@ p{
 .logo{
      max-width: 62%;
 }
-.home{margin-left: 70%;}
+.home{margin-left: auto; margin-right: 40px;}
 
 //flexbox
 .d-flex{
     flex-wrap: wrap;
     flex-flow: wrap;
 }
-//Botão da nav
-.btn-info-BM{
+@mixin btn-BM2{
     background: $gradBtn;
     border-radius: 57px;
     color: $bgGreen;
@@ -117,6 +116,11 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+//Botão da nav
+.btn-info-BM{
+    @include btn-BM2;
 }
 .btn-BM{
     color: black;
@@ -535,9 +539,6 @@ p{
 }
 //Media Query
 @media only screen and (max-width: 576px){
-    .social{
-        //display:none;
-    }
     #nm{
         margin-top:30px; text-align: center;
     }
@@ -603,5 +604,35 @@ p{
         padding: 20px;
     }
 }
+//06.04 modal
+.bmModalHeader, .bmModalFooter{
+    border: none;
+}
+.modal-content{
+    background: $gradHome;
+    background-color: white;
+}
+.bmModalTitle{  
+    @include tipografia-Oswald;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+}
 
+.btn-Inscricao-BM{
+    @include btn-BM2;
+    color: white;
+    margin-inline:auto;
+}
+#formPresente{
+    width:300px;
+    margin: auto;
+}
+.form-label{
+    font-weight: bold;
+}
 
