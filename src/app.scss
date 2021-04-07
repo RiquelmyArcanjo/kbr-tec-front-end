@@ -29,6 +29,37 @@ $black: #000;
         margin-bottom: 30px;
         }
 }
+@mixin greenArea {
+    width: 40px;
+    height: 40px;
+    background-color: $bgGreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+@mixin btn-BM2{
+    background: $gradBtn;
+    border-radius: 57px;
+    color: $bgGreen;
+    border: none;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 428.2%;
+
+    margin-bottom: 40px;
+    width: 180px;
+    height: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 body{
     background: $gradHome;
 }
@@ -97,27 +128,6 @@ p{
     flex-wrap: wrap;
     flex-flow: wrap;
 }
-@mixin btn-BM2{
-    background: $gradBtn;
-    border-radius: 57px;
-    color: $bgGreen;
-    border: none;
-
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 428.2%;
-
-    margin-bottom: 40px;
-    width: 180px;
-    height: 45px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 //Botão da nav
 .btn-info-BM{
     @include btn-BM2;
@@ -323,16 +333,8 @@ p{
     margin-bottom: 3rem;
     position: relative;
 }
-.green-area {
-    width: 40px;
-    height: 40px;
-    background-color: $bgGreen;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: rotate(45deg);
-    border-radius: 10px;
-    margin-bottom: 1rem;
+.greenAreaInscricao {
+    @include greenArea;
 }
 .number {
     font-weight: 700;
@@ -614,6 +616,29 @@ p{
 .modal-content{
     background: $gradHome;
     background-color: white;
+    overflow: hidden;
+    border: none;
+    .greenAreaModal{
+        @include greenArea;
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        left: -100px;
+        
+        background: linear-gradient(99.95deg, #1D737E 147.42%, #4FB9C7 264.41%);
+        border-radius: 57px;
+        z-index: 2;
+    }
+    .greenAreaModal2{
+        @include greenArea;
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        left: -100px;
+        bottom: 0px;
+        border-radius: 50px;
+        z-index: 1;
+    }
 }
 .bmModalTitle{  
     @include tipografia-Oswald;
