@@ -608,6 +608,9 @@ p{
     .bgTuq{
         padding: 20px;
     }
+    #geoShapesModal{
+        display: none;
+    }
 }
 //06.04 modal
 .bmModalHeader, .bmModalFooter{
@@ -628,14 +631,43 @@ p{
         background: linear-gradient(99.95deg, #1D737E 147.42%, #4FB9C7 264.41%);
         border-radius: 57px;
         z-index: 2;
+        #logoModal{
+            transform: rotate(315deg);
+            width: 105px;
+            margin-left: 65px;
+            margin-bottom: 45px;
+        }
     }
     .greenAreaModal2{
         @include greenArea;
         position: absolute;
+        width: 275px;
+        height: 275px;
+        left: -100px;
+        bottom: -25px;
+        border-radius: 50px;
+        z-index: 1;
+    }
+    .greenAreaModal3{
+        @include greenArea;
+        position: absolute;
         width: 250px;
         height: 250px;
-        left: -100px;
-        bottom: 0px;
+        right: -100px;
+        background-color: transparent;
+        border: 1px solid #87b4bb;
+        border-radius: 50px;
+        z-index: 1;
+    }
+    .greenAreaModal4{
+        @include greenArea;
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        top: 80px;
+        right: -100px;
+        background-color: transparent;
+        border: 1px solid #87b4bb;
         border-radius: 50px;
         z-index: 1;
     }
@@ -662,5 +694,10 @@ p{
 }
 .form-label{
     font-weight: bold;
+}
+input[type=text]{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
 }
 

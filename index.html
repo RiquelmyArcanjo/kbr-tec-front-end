@@ -502,8 +502,15 @@
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
-        <div class="greenAreaModal"></div>
-        <div class="greenAreaModal2"></div>
+        <div id="geoShapesModal">
+          <div class="greenAreaModal">
+            <img src="src/img/logo3.png" id="logoModal" alt="Logo Business Market">
+          </div>
+          <div class="greenAreaModal2"></div>
+          <div class="greenAreaModal3"></div>
+          <div class="greenAreaModal4"></div>
+        </div>
+
         <div class="modal-header bmModalHeader">
           <h5 class="bmModalTitle mt-4" id="exampleModalLabel">NÃO SAIA AINDA! PREPARAMOS UM PRESENTE ESPECIAL PARA VOCÊ!</h5>
           <!--<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
@@ -512,11 +519,11 @@
           <div class="modal-body">  
               <div class="mb-3">
                 <label for="nome" class="form-label">Seu nome:</label>
-                <input type="" class="form-control" id="nome" aria-describedby="emailHelp" required> 
+                <input type="text" class="form-control" id="nome" aria-describedby="emailHelp" required> 
               </div>
               <div class="mb-3">
                 <label for="telefone" class="form-label">Telefone:</label>
-                <input type="text" class="form-control" id="telefone"  required>
+                <input type="text" class="form-control" id="telefone" maxlength="10" required>
               </div>
               <div class="mb-3">
                 <label for="cpf" class="form-label">CPF:</label>
