@@ -50,11 +50,6 @@ $black: #000;
     font-style: normal;
     font-weight: bold;
     font-size: 15px;
-    line-height: 428.2%;
-
-    margin-bottom: 40px;
-    width: 180px;
-    height: 45px;
 
     display: flex;
     justify-content: center;
@@ -121,7 +116,7 @@ p{
 .logo{
      max-width: 62%;
 }
-.home{margin-left: auto; margin-right: 40px;}
+.home{margin-left: auto; margin-right: 80px;}
 
 //flexbox
 .d-flex{
@@ -131,6 +126,8 @@ p{
 //Botão da nav
 .btn-info-BM{
     @include btn-BM2;
+    position: relative;
+    z-index:10;
 }
 .btn-BM{
     color: black;
@@ -552,9 +549,6 @@ p{
     }
     .homeText{
         text-align: center;
-    }
-    .btn-info-BM{
-        margin-top:20px;
     }
 }
 
