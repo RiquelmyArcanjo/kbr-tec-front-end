@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!--Meta tags-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro Business Market - Projeto KBR TEC</title>
+  <meta name="description" content="Projeto feito para testar conhecimentos em Front-End.">
+  <meta name="author" content="Riquelmy Arcanjo de Araújo">
+  <!--CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="dist/app.css">
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600&family=Oswald:wght@200;700&family=Source+Sans+Pro:wght@700&display=swap"
+    rel="stylesheet">
+  <!--JQuery-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="dist/jquery.mask.min.js"></script>
+  <!--JS-->
+  <script src="dist/masks.js"></script>
+</head>
+<body>
+  <header>
+      <div class="greenAreaHeader">
+      <a href="index.html">
+        <img src="src/img/logo3.png" id="logoHeader" alt="Logo Business Market">
+      </a>
+      </div>   
+  </header>
+  <main>
+    <section class="cadastro">
+      <h2 class="subtitle text-center">CRIE <b>SUA CONTA</b></h2>
+      <div class="passos d-flex justify-content-between">
+        <div class="greenAreaInscricao"><span class="passo1">.01</span></div>
+        <div class="reticencias"></div>
+        <div class="greenAreaInscricao"><span class="passo1">.02</span></div>
+        <div class="reticencias"></div>
+        <div class="greenAreaInscricao"><span class="passo1">.03</span></div>
+      </div>
+      <form action="" class="mt-5">
+        <div class="mb-5">
+          <label for="nome" class="form-label text-white">NOME COMPLETO</label>
+          <input type="text" class="form-control" id="nome" maxlength="75" placeholder="EX: Diego Ribeiro" required> 
+        </div>
+        <div class="mb-5">
+          <label for="email" class="form-label text-white">E-MAIL</label>
+          <input type="email" class="form-control" id="email" maxlength="50" placeholder="EX: diegoribeiro@gmail.com" required> 
+        </div>
+        <div class="mb-5">
+          <label for="celular" class="form-label text-white">CELULAR</label>
+          <input type="text" class="form-control" id="celular" maxlength="11" placeholder="EX: 1399999999" required> 
+        </div>
+        <div class="d-grid gap-2 w-50">
+          <a href="cadastro.html" class="btn btn-primary btn-lg btn-BM" role="button" aria-disabled="true">CONTINUAR</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer mt-5">
+    <div class="text-center p-3 text-white">
+      Desenvolvido para
+      <a class="text-white" href="https://www.kbrtec.com.br/"><img src="src/img/kbr.png" alt=""></a>
+    </div>
+  </footer>
+
+  <!--Scripts-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

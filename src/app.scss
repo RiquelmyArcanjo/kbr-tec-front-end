@@ -1,9 +1,12 @@
 //Variáveis
 $bgTurquoise: #48afbc;
 $bgGreen: #C2FF01;
+$black: #000;
 $gradHome: linear-gradient(220.36deg, rgba(25, 112, 129, 0.32) 0%, rgba(247, 247, 249, 0) 64.63%);
 $gradBtn: linear-gradient(360deg, #1D737E -74.42%, #4FB9C7 154.17%);
-$black: #000;
+$gradLogo: linear-gradient(99.95deg, #1D737E -2.54%, #4FB9C7 114.45%);
+
+
 
 //Mixins
 @mixin tipografia-Fira-Sans {
@@ -38,7 +41,6 @@ $black: #000;
     align-items: center;
     transform: rotate(45deg);
     border-radius: 10px;
-    margin-bottom: 1rem;
 }
 @mixin btn-BM2{
     background: $gradBtn;
@@ -55,8 +57,14 @@ $black: #000;
     justify-content: center;
     align-items: center;
 }
+//Predefinido
 body{
     background: $gradHome;
+}
+input[type=text], input[type=email], input[type=number]{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
 }
 //Fontes
 .title{
@@ -688,13 +696,67 @@ p{
 #formPresente{
     width:300px;
     margin: auto;
-}
+}   
 .form-label{
     font-weight: bold;
 }
-input[type=text]{
-    border: none;
-    border-bottom: 1px solid #ccc;
-    background-color: transparent;
+//08.04 cadastro.html
+//header
+.greenAreaHeader{
+    @include greenArea;
+    width: 350px;
+    height: 350px;
+    background: $gradLogo;
+    border-radius: 50px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: -225px ;
+    z-index: 10;
+    #logoHeader{
+        transform: rotate(315deg);
+        width: 80px;
+        margin-top: 180px;
+        margin-left: 180px;
+    }
 }
+//cadastro
+.cadastro{
+    max-width:700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50px;
+    padding: 140px 10% 5% 10%;
+    background: $black;
+    border-radius: 55px;
+    .passos{
+        /*.greenAreaInscricao:nth-child(1){
+            
+        }*/
+        .greenAreaInscricao:nth-child(3){
+            background-color:transparent;
+            border: 2px solid $bgGreen;
+        }
 
+        .greenAreaInscricao:nth-child(5){
+            background-color:gray;
+        }
+        .reticencias{
+            content: url("../src/img/reticencias2.png");
+            align-self: flex-start;
+            margin-top:auto;
+            margin-bottom:auto;
+        }
+    }
+    .subtitle{
+        color: white;
+        font-weight: normal;
+    }
+    input{
+        border-bottom: 1px solid $bgGreen;
+        color: white;
+    }
+    .d-grid{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
