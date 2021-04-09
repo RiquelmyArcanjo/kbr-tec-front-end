@@ -544,79 +544,7 @@ p{
 .footer{
     background-color: $black;
 }
-//Media Query
-@media only screen and (max-width: 576px){
-    #nm{
-        margin-top:30px; text-align: center;
-    }
-    .subBusiness1{
-        text-align:center;
-    }
-    #descNm{
-        text-align: center;
-    }
-    .homeText{
-        text-align: center;
-    }
-    .home{
-        margin-left:30px;
-    }
-}
 
-@media only screen and (max-width: 992px) {
-    .homeImg{
-      display: none !important;
-    }
-    .bgBM{
-        background-image: none;
-        background-color: $black;
-        padding: 20px;
-        h2{
-            margin-bottom:30px;
-        }
-    }
-    .back2Color{
-        background-image:none;
-    }
-    .back2Color2{
-        background-image:none;
-    }
-    .years{
-        padding-bottom: 50px;
-    }
-    .businessIcon{
-        display: none;
-    }
-    .subBusiness2{
-        text-align:center;
-    }
-    .bgBM2{
-        background-image: none;
-        background-color: $black;
-        padding: 20px;
-    }
-    .lside{
-        padding:20px;
-    }
-    .rside{
-        padding: 20px 20px 40px 20px;
-    }
-    #money{
-        margin-top:30px;
-    }
-    #investimento{
-        padding-top:0px;
-    }
-    .right-price{
-        margin-top: 20px;
-    }
-    .bgTuq{
-        padding: 20px;
-    }
-    #geoShapesModal{
-        display: none;
-    }
-}
 //06.04 modal
 .bmModalHeader, .bmModalFooter{
     border: none;
@@ -729,16 +657,30 @@ p{
     background: $black;
     border-radius: 55px;
     .passos{
-        /*.greenAreaInscricao:nth-child(1){
-            
-        }*/
+        .greenAreaInscricao:nth-child(1){
+            #passo1{
+                transform:rotate(-45deg);
+                font-weight: bold;
+                color: $black;
+            }    
+        }
         .greenAreaInscricao:nth-child(3){
             background-color:transparent;
             border: 2px solid $bgGreen;
+            #passo2{
+                transform:rotate(-45deg);
+                font-weight: bold;
+                color: white;
+            }    
         }
-
         .greenAreaInscricao:nth-child(5){
-            background-color:gray;
+            background-color:transparent;
+            border: 2px solid $bgGreen;
+            #passo3{
+                transform:rotate(-45deg);
+                font-weight: bold;
+                color: white;
+            }    
         }
         .reticencias{
             content: url("../src/img/reticencias2.png");
@@ -758,5 +700,105 @@ p{
     .d-grid{
         margin-left: auto;
         margin-right: auto;
+    }
+}
+footer{
+    margin-top: 3rem;
+}
+
+//Media Query
+@media only screen and (max-width: 576px){
+    #nm{
+        margin-top:30px; text-align: center;
+    }
+    .subBusiness1{
+        text-align:center;
+    }
+    #descNm{
+        text-align: center;
+    }
+    .homeText{
+        text-align: center;
+    }
+    .home{
+        margin-left:30px;
+    }
+    .greenAreaHeader{
+        transform: rotate(0deg);
+        width:100%;
+        height: 50px;
+        margin-top:0;
+        border-radius: 0;
+        img{
+            display:none;
+        }
+        .imagem{
+            content: url("../src/img/logo4.png");
+            position: relative;
+        }
+    }
+    .cadastro{
+        border-radius: 0;
+        padding-bottom: 10%;
+        padding-top: 10%;
+        margin-top: 0;
+    }
+    footer{
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .homeImg{
+      display: none !important;
+    }
+    .bgBM{
+        background-image: none;
+        background-color: $black;
+        padding: 20px;
+        h2{
+            margin-bottom:30px;
+        }
+    }
+    .back2Color{
+        background-image:none;
+    }
+    .back2Color2{
+        background-image:none;
+    }
+    .years{
+        padding-bottom: 50px;
+    }
+    .businessIcon{
+        display: none;
+    }
+    .subBusiness2{
+        text-align:center;
+    }
+    .bgBM2{
+        background-image: none;
+        background-color: $black;
+        padding: 20px;
+    }
+    .lside{
+        padding:20px;
+    }
+    .rside{
+        padding: 20px 20px 40px 20px;
+    }
+    #money{
+        margin-top:30px;
+    }
+    #investimento{
+        padding-top:0px;
+    }
+    .right-price{
+        margin-top: 20px;
+    }
+    .bgTuq{
+        padding: 20px;
+    }
+    #geoShapesModal{
+        display: none;
     }
 }
