@@ -60,6 +60,7 @@ $gradLogo: linear-gradient(99.95deg, #1D737E -2.54%, #4FB9C7 114.45%);
 //Predefinido
 body{
     background: $gradHome;
+    overflow-x: hidden;
 }
 input[type=text], input[type=email], input[type=number]{
     border: none;
@@ -554,7 +555,7 @@ p{
     background-color: white;
     overflow: hidden;
     border: none;
-    .greenAreaModal{
+    .greenAreaModal:nth-child(1){
         @include greenArea;
         position: absolute;
         width: 300px;
@@ -571,7 +572,7 @@ p{
             margin-bottom: 45px;
         }
     }
-    .greenAreaModal2{
+    .greenAreaModal:nth-child(2){
         @include greenArea;
         position: absolute;
         width: 275px;
@@ -581,7 +582,7 @@ p{
         border-radius: 50px;
         z-index: 1;
     }
-    .greenAreaModal3{
+    .greenAreaModal:nth-child(3){
         @include greenArea;
         position: absolute;
         width: 250px;
@@ -592,7 +593,7 @@ p{
         border-radius: 50px;
         z-index: 1;
     }
-    .greenAreaModal4{
+    .greenAreaModal:nth-child(4){
         @include greenArea;
         position: absolute;
         width: 250px;
@@ -632,6 +633,7 @@ p{
 //header
 .greenAreaHeader{
     @include greenArea;
+    position: relative  ;
     width: 350px;
     height: 350px;
     background: $gradLogo;
@@ -639,7 +641,7 @@ p{
     margin-left:auto;
     margin-right: auto;
     margin-top: -225px ;
-    z-index: 10;
+    z-index: 3;
     #logoHeader{
         transform: rotate(315deg);
         width: 80px;
@@ -647,8 +649,98 @@ p{
         margin-left: 180px;
     }
 }
-//cadastro
+//shapes out
+.greenAreaInscricaoOut:nth-child(1){
+    @include greenArea;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-left: 130px;
+    margin-top: 80px;
+    border-radius: 20px;
+    z-index: 1;
+}
+.greenAreaInscricaoOut:nth-child(2){
+    @include greenArea;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    margin-left: 180px;
+    margin-top: 230px;
+    border-radius: 44px;
+    z-index: 1;
+}
+.greenAreaInscricaoOut:nth-child(3){
+    @include greenArea;
+    position: absolute;
+    width: 225px;
+    height: 225px;
+    margin-left: calc(100% - 170px);
+    margin-top: -140px;
+    background-color: transparent;
+    border: 1px solid #87b4bb;
+    border-radius: 35px;
+    z-index: 1;
+}
+.greenAreaInscricaoOut:nth-child(4){
+    @include greenArea;
+    position: absolute;
+    width: 225px;
+    height: 225px;
+    margin-left: calc(100% - 170px);
+    margin-top: -90px;
+    background-color: transparent;
+    border: 1px solid #87b4bb;
+    
+    border-radius: 35px;
+    z-index: 1;
+}
+.cadastro .greenAreaInscricaoOut{
+    @include greenArea;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border:none;
+    border-radius: 20px;
+    z-index: 1;
+}
+.cadastro .greenAreaInscricaoOut{
+    @include greenArea;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border:none;
+    border-radius: 20px;
+    z-index: 1;
+}
+footer .greenAreaInscricaoOut:nth-child(1){
+    @include greenArea;
+    position: absolute;
+    width: 225px;
+    height: 225px;
+    bottom: -255px;
+    left: -275px;
+    background-color: transparent;
+    border: 1px solid #87b4bb;
+    border-radius: 35px;
+    z-index: 1;
+}
+footer .greenAreaInscricaoOut:nth-child(2){
+    @include greenArea;
+    position: absolute;
+    width: 225px;
+    height: 225px;
+    bottom: -330px;
+    left: -325px;
+    background-color: transparent;
+    border: 1px solid #87b4bb;
+    border-radius: 35px;
+    z-index: 1;
+}
+
+//form cadastro
 .cadastro{
+    position: relative;
     max-width:700px;
     margin-left: auto;
     margin-right: auto;
@@ -656,6 +748,7 @@ p{
     padding: 140px 10% 5% 10%;
     background: $black;
     border-radius: 55px;
+    z-index: 2;
     .passos{
         .greenAreaInscricao:nth-child(1){
             #passo1{
@@ -726,7 +819,7 @@ footer{
     .greenAreaHeader{
         transform: rotate(0deg);
         width:100%;
-        height: 50px;
+        height: 70px;
         margin-top:0;
         border-radius: 0;
         img{
@@ -735,6 +828,9 @@ footer{
         .imagem{
             content: url("../src/img/logo4.png");
             position: relative;
+            max-width: 65%;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
     .cadastro{
@@ -745,6 +841,7 @@ footer{
     }
     footer{
         margin-top: 0;
+        overflow: hidden;
     }
 }
 
@@ -799,6 +896,9 @@ footer{
         padding: 20px;
     }
     #geoShapesModal{
+        display: none;
+    }
+    #outShapes, footer .greenAreaInscricaoOut:nth-child(1), footer .greenAreaInscricaoOut:nth-last-child(2), .cadastro .greenAreaInscricaoOut{
         display: none;
     }
 }
