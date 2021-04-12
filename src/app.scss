@@ -65,8 +65,22 @@ body{
 input[type=text], input[type=email], input[type=number]{
     border: none;
     border-bottom: 1px solid #ccc;
+    border-radius: 0;
     background-color: transparent;
 }
+select{
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    color: #fff;
+    border-bottom: 1px solid $bgGreen;
+    width: 100%;
+    padding: .375rem .75rem;
+    option{
+        color: $black;
+      }
+  }
+
 //Fontes
 .title{
     @include tipografia-Oswald;
