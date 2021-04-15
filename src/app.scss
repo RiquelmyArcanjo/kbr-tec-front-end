@@ -62,11 +62,20 @@ body{
     background: $gradHome;
     overflow-x: hidden;
 }
-input[type=text], input[type=email], input[type=number]{
+.form-control{
     border: none;
     border-bottom: 1px solid #ccc;
     border-radius: 0;
     background-color: transparent;
+}
+.form-control:focus {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom: 1px solid #C2FF01;
+    outline: 0;
+    box-shadow: none;
+    
 }
 select{
     border: none;
@@ -804,13 +813,27 @@ footer .greenAreaInscricaoOut:nth-child(2){
         border-bottom: 1px solid $bgGreen;
         color: white;
     }
+    #continuarP3{
+        color: $black;
+    }
     .d-grid{
         margin-left: auto;
         margin-right: auto;
     }
+    #validaNomeMsg, #validaEmailMsg, #validaCelularMsg, #validaCPFMsg, #validaEstadoMsg, #validadeCidadeMsg{
+        color: #f02353;
+        font-weight: 500;
+    }
 }
 footer{
     margin-top: 3rem;
+}
+.btnVoltar{
+    border:none;
+    border-radius: 0;
+    background-color: transparent;
+    font-weight: bold;
+    color: #fff;
 }
 
 //Media Query
