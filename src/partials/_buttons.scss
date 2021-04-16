@@ -1,0 +1,28 @@
+//Botões
+.btn-info-BM{
+    @include btn-BM2;
+    position: relative;
+    z-index:10;
+}
+.btn-BM{
+    color: black;
+    background: $bgGreen;
+    border-radius: 30px;
+    border: none;
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 250.0%;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: $bgBlack;
+}
+.btn-Inscricao-BM{
+    @include btn-BM2;
+    color: white;
+    margin-inline:auto;
+}

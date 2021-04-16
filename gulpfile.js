@@ -3,7 +3,7 @@ var sass = require('gulp-sass');
 const image = require('gulp-image');
 
 var paths = {
-    src: 'src/**/*.scss',
+    src: 'src/app.scss',
     dist: 'dist/'
 }
 

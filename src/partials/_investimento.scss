@@ -1,0 +1,114 @@
+//INVESTIMENTO
+//Icon Dinheiro na mão
+#money{
+    position: relative;
+    margin: auto;
+    margin-top: -100px;
+    height: 200px;
+}
+
+//Preço do Investimento
+.price{
+    @include tipografia-Oswald;
+    font-size: 25px;
+    line-height: 37px;
+}
+.left-price{
+    width: 100%;
+    background: #D40033;
+    border-radius: 20px;
+    .desc-price-l{
+        @include tipografia-Oswald;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .price-l{
+        @include tipografia-Oswald;
+        font-size: 40.5797px;
+        line-height: 60px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;    
+        color: #FFFFFF;
+    } 
+    
+}
+.right-price{
+    width: 100%;
+    background: #FFFFFF;
+    border: 2px solid #D40033;
+    box-sizing: border-box;
+    border-radius: 20px;
+    .desc-price-r{
+        @include tipografia-Oswald;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 136.5%;
+        color: $bgBlack;
+        text-transform: lowercase;
+    }
+    .price-r{
+        @include tipografia-Oswald;
+        font-size: 40.5797px;
+        line-height: 60px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #D40033;   
+    } 
+}
+.left-price{
+    width: 100%;
+    height: 131px;
+    background: #D40033;
+    border-radius: 20px;
+    .desc-price-l{
+        @include tipografia-Oswald;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .price-l{
+        @include tipografia-Oswald;
+        font-size: 40.5797px;
+        line-height: 60px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        
+        color: #FFFFFF;
+    } 
+    
+}
+.right-price{
+    width: 100%;
+    height: 131px;
+    background: #FFFFFF;
+    border: 2px solid #D40033;
+    box-sizing: border-box;
+    border-radius: 20px;
+    .desc-price-r{
+        @include tipografia-Oswald;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 136.5%;
+        color: $bgBlack;
+        text-transform: lowercase;
+    }
+    .price-r{
+        @include tipografia-Oswald;
+        font-size: 40.5797px;
+        line-height: 60px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #D40033;   
+    } 
+}
+.prices{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,54 @@
+//presets
+body{
+    background: $gradHome;
+    overflow-x: hidden;
+}
+h1,h2,p{
+    margin-bottom: 30px;
+}
+p{
+    font-family: 'Fira Sans', sans-serif;
+}
+.logo{
+    max-width: 62%;
+}
+.ulHome{
+   margin-left: auto; margin-right: 80px;
+}
+//flexbox
+.d-flex{
+    flex-wrap: wrap;
+    flex-flow: wrap;
+}
+//colLeftRight
+.left{
+    display: flex;
+    align-items: center;
+}
+.right{
+    display: flex;
+    align-items: center;
+}
+.businessIcon{
+    width: 100px;
+}
+//Fundos dos containers
+.fundoContainer{
+    background-image: linear-gradient(to right, $bgTurquoise 50%, #000 50%);
+}
+.fundoContainer2{
+    background-image: linear-gradient(to right, #000 50%, $bgTurquoise 50%);
+    //Lside e rside
+    .lside{
+        @include sides;
+        background: $bgBlack;
+    }
+    .rside{
+        @include sides;
+        background: $bgTurquoise;
+    }
+}
+footer{
+    margin-top: 3rem;
+    background-color: $bgBlack;
+}

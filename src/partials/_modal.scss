@@ -1,0 +1,78 @@
+//modal
+.bmModalHeader, .bmModalFooter{
+    border: none;
+}
+.modal-content{
+    background: $gradHome;
+    background-color: white;
+    overflow: hidden;
+    border: none;
+    .greenAreaModal:nth-child(1){
+        @include greenArea;
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        left: -100px;
+        
+        background: linear-gradient(99.95deg, #1D737E 147.42%, #4FB9C7 264.41%);
+        border-radius: 57px;
+        z-index: 2;
+        #logoModal{
+            transform: rotate(315deg);
+            width: 105px;
+            margin-left: 65px;
+            margin-bottom: 45px;
+        }
+    }
+    .greenAreaModal:nth-child(2){
+        @include greenArea;
+        position: absolute;
+        width: 275px;
+        height: 275px;
+        left: -100px;
+        bottom: -25px;
+        border-radius: 50px;
+        z-index: 1;
+    }
+    .greenAreaModal:nth-child(3){
+        @include greenArea;
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        right: -100px;
+        background-color: transparent;
+        border: 1px solid #87b4bb;
+        border-radius: 50px;
+        z-index: 1;
+    }
+    .greenAreaModal:nth-child(4){
+        @include greenArea;
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        top: 80px;
+        right: -100px;
+        background-color: transparent;
+        border: 1px solid #87b4bb;
+        border-radius: 50px;
+        z-index: 1;
+    }
+}
+.bmModalTitle{  
+    @include tipografia-Oswald;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+#formPresente{
+    width:300px;
+    margin: auto;
+}   
+.form-label{
+    font-weight: bold;
+}

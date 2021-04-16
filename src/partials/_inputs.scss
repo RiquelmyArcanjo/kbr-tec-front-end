@@ -1,0 +1,28 @@
+//inputs
+.form-control{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    background-color: transparent;
+}
+.form-control:focus {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom: 1px solid $bgGreen;
+    outline: 0;
+    box-shadow: none;
+    
+}
+select{
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    color: #fff;
+    border-bottom: 1px solid $bgGreen;
+    width: 100%;
+    padding: .375rem .75rem;
+    option{
+        color: $bgBlack;
+      }
+}

@@ -1,0 +1,47 @@
+//Mixins
+@mixin tipografia-Fira-Sans {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: $bgBlack;
+}
+@mixin tipografia-Oswald {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $bgBlack;
+}
+@mixin sides {
+    position: relative;
+    padding: 50px 50px 0 50px;
+        h2,p{
+        color:#fff;
+        margin-bottom: 30px;
+        }
+}
+@mixin greenArea {
+    width: 40px;
+    height: 40px;
+    background-color: $bgGreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg);
+    border-radius: 10px;
+}
+@mixin btn-BM2{
+    background: $gradBtn;
+    border-radius: 57px;
+    color: $bgGreen;
+    border: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

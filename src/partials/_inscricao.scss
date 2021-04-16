@@ -1,0 +1,40 @@
+//Inscrição
+.steps-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 0 0 25%;
+    margin-bottom: 3rem;
+    position: relative;
+}
+.greenAreaInscricao {
+    @include greenArea;
+}
+.number {
+    font-weight: 700;
+    transform: rotate(-45deg);
+    font-family: "Open Sans",Arial,sans-serif;
+    font-size: 20px;
+}
+.desc {
+    text-align: center;
+    font-size: 14px;
+    max-width: 190px;
+}
+.inscricao {
+    background: linear-gradient(to right top, #32848f, #a3eaf3);
+    padding: 4rem 0;
+    border-radius: 20px;
+
+    z-index: 2;
+    margin: auto;
+    transform: translate(0, -2rem);
+    width: 100%;
+}

@@ -1,0 +1,22 @@
+//Home index
+.homeImg{
+    margin-top: -80px;
+}
+//Redes sociais
+.social{
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    justify-content: center;
+    .facebook{
+        margin-right: 15px;
+        width: 40px;
+    }
+    .twitter{
+        margin-left: 15px;
+        width: 40px;
+    }
+    .instagram{
+        width: 40px;
+    }
+}

@@ -1,0 +1,19 @@
+//headerCadastro
+.greenAreaHeader{
+    @include greenArea;
+    position: relative  ;
+    width: 350px;
+    height: 350px;
+    background: $gradLogo;
+    border-radius: 50px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: -225px ;
+    z-index: 3;
+    #logoHeader{
+        transform: rotate(315deg);
+        width: 80px;
+        margin-top: 180px;
+        margin-left: 180px;
+    }
+}

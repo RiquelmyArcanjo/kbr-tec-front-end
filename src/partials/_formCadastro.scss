@@ -1,0 +1,71 @@
+//formCadastro
+.cadastro{
+    position: relative;
+    max-width:700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50px;
+    padding: 140px 10% 5% 10%;
+    background: $bgBlack;
+    border-radius: 55px;
+    z-index: 2;
+    .passos{
+        .greenAreaInscricao:nth-child(1){
+            #passo1{
+                transform:rotate(-45deg);
+                font-weight: bold;
+                color: $bgBlack;
+            }    
+        }
+        .greenAreaInscricao:nth-child(3){
+            background-color:transparent;
+            border: 2px solid $bgGreen;
+            #passo2{
+                transform:rotate(-45deg);
+                font-weight: bold;
+                color: white;
+            }    
+        }
+        .greenAreaInscricao:nth-child(5){
+            background-color:transparent;
+            border: 2px solid $bgGreen;
+            #passo3{
+                transform:rotate(-45deg);
+                font-weight: bold;
+                color: white;
+            }    
+        }
+        .reticencias{
+            content: url("../src/img/reticencias2.png");
+            align-self: flex-start;
+            margin-top:auto;
+            margin-bottom:auto;
+        }
+    }
+    .subtitle{
+        color: white;
+        font-weight: normal;
+    }
+    input{
+        border-bottom: 1px solid $bgGreen;
+        color: white;
+    }
+    #continuarP3{
+        color: $bgBlack;
+    }
+    .d-grid{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #validaNomeMsg, #validaEmailMsg, #validaCelularMsg, #validaCPFMsg, #validaEstadoMsg, #validadeCidadeMsg{
+        color: #f02353;
+        font-weight: 500;
+    }
+}
+.btnVoltar{
+    border:none;
+    border-radius: 0;
+    background-color: transparent;
+    font-weight: bold;
+    color: #fff;
+}

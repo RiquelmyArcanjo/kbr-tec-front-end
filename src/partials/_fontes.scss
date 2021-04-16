@@ -1,0 +1,52 @@
+//Fontes
+.title{
+    @include tipografia-Oswald;
+    font-size: 30px;
+    line-height: 155.5%;
+    letter-spacing: 0.1em;
+}
+.subtitle{
+    @include tipografia-Oswald;
+    font-size: 25px;
+    line-height: 37px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.subtitle2{
+    @include tipografia-Oswald;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.2em;
+}
+.h2green{
+    font-size: 25px;
+    line-height: 37px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $bgGreen;
+}
+.h3green{
+    @include tipografia-Oswald;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: $bgGreen;
+}
+.greenFont {
+    background: $bgBlack;
+    color: $bgGreen;
+    padding: 0 1rem;
+    border-radius: 10px;
+    font-weight: 700;
+    white-space: nowrap;
+    font-family: "Open Sans",Arial,sans-serif;
+}
+.figure-caption{
+    @include tipografia-Fira-Sans;
+    width: 150px;
+   }
+.text-justify{
+    text-align: justify;
+}
