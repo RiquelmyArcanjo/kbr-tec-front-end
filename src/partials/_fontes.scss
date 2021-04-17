@@ -50,3 +50,26 @@
 .text-justify{
     text-align: justify;
 }
+.fontGreen{
+    color: $bgGreen;
+}
+.fontGreenHome{
+    color: $bgGreen;
+    background-color: $bgBlack;
+    padding: 2px 20px 2px 20px;
+    border-radius: 10px;
+}
+.timelineDesc{
+    display: flex;
+    flex-direction: column;
+    margin-left: 130px;
+    margin-top: -45px;
+    
+    .timelineText{
+      color: #fff;
+    }
+    .timelinePrice{
+        @include tipografia-Oswald;
+        color: $bgGreen;
+    }
+  }

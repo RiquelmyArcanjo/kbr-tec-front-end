@@ -1,24 +1,27 @@
 //Media Query
 @media only screen and (max-width: 576px){
-    #nm{
-        margin-top:20px; text-align: center;
+    .title, .subtitle, .subtitle2{
+        text-align: center;
     }
     .subBusiness1{
         text-align:center;
     }
-    #descNm{
-        text-align: center;
-    }
     .homeText{
         text-align: center;
     }
-    .home{
-        margin-left:30px;
+    .timeline .subtitle2, .years .subtitle{
+        text-align: start;
+    }
+    .ulHome{
+        display: none;
+    }
+    #home{
+        margin-top:0px;
     }
     .greenAreaHeader{
         transform: rotate(0deg);
         width:100%;
-        height: 70px;
+        height: 100px;
         margin-top:0;
         border-radius: 0;
         img{
@@ -31,6 +34,17 @@
             margin-left: auto;
             margin-right: auto;
         }
+    }
+    .dollar{
+        width: 80px;
+        height: 80px;
+    }
+
+    .btn-BM{
+        letter-spacing: 0;
+    }
+    .item{
+        height: 150px;
     }
     .cadastro{
         border-radius: 0;
@@ -48,10 +62,11 @@
     .homeImg{
       display: none !important;
     }
+
     .bgBM{
         background-image: none;
         background-color: $bgBlack;
-        padding: 20px;
+        padding: 30px 20px 30px 20px;
         h2{
             margin-bottom:30px;
         }
@@ -63,11 +78,8 @@
         background-image:none;
     }
     .years{
-        padding-bottom: 50px;
+        padding: 30px 20px 30px 30px;
     }
-    /*.businessIcon{
-        display: none;
-    }*/
     .subBusiness2{
         text-align:center;
     }
@@ -75,6 +87,9 @@
         background-image: none;
         background-color: $bgBlack;
         padding: 20px;
+        .h2green{
+            margin-bottom: 30px;
+        }
     }
     .lside{
         padding:20px;
@@ -91,8 +106,8 @@
     .right-price{
         margin-top: 20px;
     }
-    .bgTuq{
-        padding: 20px;
+    .bgTurq{
+        padding: 30px 20px 30px 20px;
     }
     #geoShapesModal{
         display: none;
@@ -103,5 +118,14 @@
     .gap-2{
         margin-left:auto;
         margin-right:auto;
+    }
+    #videos{
+        text-align:center;
+    }
+    .fontGreenHome{
+        color: $bgBlack;
+        background-color: transparent;
+        padding: 0;
+        border-radius: 0;
     }
 }

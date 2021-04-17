@@ -48,6 +48,10 @@
     position: relative;
     padding-top: 50px;
     padding-left: 50px;
+    padding-bottom:30px;
+    .yearsTitle{
+        display: flex;
+      }
     h2,p{
         color:#fff;
         margin-bottom: 30px;
@@ -66,7 +70,6 @@
     padding-left: 50px;
     list-style: none;
     text-align: left;
-    height: 100%;
 }
 .timeline .event {
     position: relative;

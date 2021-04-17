@@ -27,9 +27,12 @@
   <header>
     <nav class="navbar navbar-expand navbar-light p-0">
       <div class="container-fluid p-0">
-        <a href="index.html">
-          <img src="src/img/logo.png" class="img-fluid logo" alt="logo Business Market">
-        </a>
+        <div class="greenAreaHeader">
+          <a href="index.html">
+            <div class="imagem"></div>  
+              <img src="src/img/logo3.png" id="logoHeader" alt="Logo Business Market">   
+          </a>
+        </div>  
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ulHome">
             <li class="nav-item">
@@ -43,13 +46,13 @@
   </header>
 
   <main>
-    <section class="home">
+    <section id="home">
       <div class="container-fluid p-0">
         <div class="container">
           <div class="row">
             <div class="col-lg">
               <div class="homeText mt-4">
-                <h1 class="title">standard Lorem Ipsum Excepteur sint occaec Lorem ipsum dolor sit ame onsectetur
+                <h1 class="title">standard Lorem Ipsum <span class="fontGreenHome">Excepteur sint occaec</span> Lorem ipsum dolor sit ame onsectetur
                   adipiscing elit dolore eu fugiat nulla!</h1>
                 <p>popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
                   more
@@ -64,19 +67,22 @@
             </div>
           </div>
           <div class="row mt-3">
-            <div class="col-lg-5">
-              <img src="src/img/person.png" class="img-fluid person" alt="homem sorrindo">
-              <div class="social">
-                <a href=""><img src="src/img/facebook.png" class="facebook" alt="Logo do Facebook"
-                    title="Acesso o nosso Facebook"></a>
-                <a href=""><img src="src/img/instagram.png" class="instagram" alt="Logo do Instagram"
-                    title="Acesso o nosso Instagram"></a>
-                <a href=""><img src="src/img/twitter.png" class="twitter" alt="Logo do Twitter"
-                    title="Acesso o nosso Twitter"></a>
+            <div class="col-lg-5 pessoa">
+              <div class="d-flex justify-content-center">
+                <img src="src/img/person.png" class="img-fluid person" alt="homem sorrindo">
+                <div class="social">
+                  <a href=""><img src="src/img/facebook.png" class="facebook" alt="Logo do Facebook"
+                      title="Acesso o nosso Facebook"></a>
+                  <a href=""><img src="src/img/instagram.png" class="instagram" alt="Logo do Instagram"
+                      title="Acesso o nosso Instagram"></a>
+                  <a href=""><img src="src/img/twitter.png" class="twitter" alt="Logo do Twitter"
+                      title="Acesso o nosso Twitter"></a>
+                </div>
               </div>
+
             </div>
             <div class="col-lg-7">
-              <h2 class="subtitle" id="nm">MEU NOME É LOREM IPSUM</h2>
+              <h2 class="subtitle" id="nm">MEU NOME É <b>LOREM IPSUM</b></h2>
               <h3 class="subtitle2 mb-4" id="descNm">Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum
               </h3>
@@ -101,10 +107,10 @@
           <a href="">
             <img src="src/img/logo2.png" class="logoFundo img-fluid" alt="Logo Business Market">
           </a>
-          <h2 class="subtitle">Lorem Ipsum Lorem Ipsum to make type book</h2>
+          <h2 class="subtitle"><span class="fontGreen">Lorem Ipsum</span> Lorem Ipsum to make type book</h2>
         </div>
         <div class="col-lg">
-          <p class="text-justify">Lorem Ipsum to make a type specimen book. It has survived not only five centuries, but
+          <p class="text-justify"><span class="fontGreen">Lorem Ipsum</span> to make a type specimen book. It has survived not only five centuries, but
             also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
             with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
             publishing
@@ -147,19 +153,40 @@
             <p class="text-justify">publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
           </div>
           <div class="col-lg years">
+            <div class="yearsTitle">
+              <h2 class="subtitle">Mecently with desktop publishing software like:</h2>
+              <img src="src/img/dollar.png" class="dollar" alt="Icone de dinheiro">
+            </div>
+
             <ul class="timeline">
-              <h2 class="subtitle">Mecently with desktop publishing software like: </h2>
-              <li class="event">
+              <li class="event mb-5">
                 <h3 class="subtitle2 year">2018</h3>
+                <div class="timelineDesc">
+                  <div class="timelineText">Lorem Ipsum Dolor</div>
+                  <div class="timelinePrice">R$ 15.000,00</div>
+                </div>
               </li>
-              <li class="event">
+              <li class="event mb-5">
                 <h3 class="subtitle2 year">2015</h3>
+                <div class="timelineDesc">
+                  <div class="timelineText">Lorem Ipsum Dolor</div>
+                  <div class="timelinePrice">R$ 6.000,00</div>
+                </div>
+
               </li>
-              <li class="event">
+              <li class="event mb-5">
                 <h3 class="subtitle2 year">2010</h3>
+                <div class="timelineDesc">
+                  <div class="timelineText">Lorem Ipsum Dolor</div>
+                  <div class="timelinePrice">R$ 2.000,00</div>
+                </div>
               </li>
               <li class="event">
                 <h3 class="subtitle2 year">2008</h3>
+                <div class="timelineDesc">
+                  <div class="timelineText">Lorem Ipsum Dolor</div>
+                  <div class="timelinePrice">R$ 800,00</div>
+                </div>
               </li>
             </ul>
           </div>
@@ -212,12 +239,12 @@
     <div class="bgBM2">
       <div class="row">
         <div class="col-lg">
-          <h2 class="subtitle">Versions of Lorem IpsumLetraset sheets <div class="h2green">publishing software like?
+          <h2 class="subtitle">Versions of Lorem Ipsum Letraset sheets <div class="h2green">publishing software like?
             </div>
           </h2>
           <p class="text-justify">Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
             publishing software like
-            Aldus PageMaker including versions of Lorem IpsumLetraset</p>
+            Aldus PageMaker including versions of Lorem Ipsum Letraset</p>
         </div>
         <div class="col-lg text-center">
           <div class="d-grid gap-2 w-75">
@@ -284,26 +311,26 @@
       <div class="container">
         <div class="row">
           <div class="col-lg lside">
-            <h2 class="subtitle">Versions of Lorem IpsumLetraset sheets</h2>
+            <h2 class="subtitle">Versions of Lorem Ipsum Letraset sheets</h2>
             <h3 class="h3green">publishing software like</h3>
             <p class="text-justify">Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of Lorem IpsumLetraset Letraset sheets
+              publishing software like Aldus PageMaker including versions of Lorem Ipsum Letraset Letraset sheets
               containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
-              including versions of Lorem IpsumLetraset</p>
+              including versions of Lorem Ipsum Letraset</p>
             <p class="text-justify">Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of Lorem IpsumLetraset Letraset sheets
+              publishing software like Aldus PageMaker including versions of Lorem Ipsum Letraset Letraset sheets
               containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
-              including versions of Lorem IpsumLetraset</p>
+              including versions of Lorem Ipsum Letraset</p>
             <p class="pcheck">On the other hand, we denounce</p>
             <p class="pcheck">we denounce With righteous indignation</p>
             <p class="pcheck">Dislike men who are so beguiled</p>
             <p class="pcheck">Demoralized by the charms of pleasure</p>
             <h3 class="h3green mt-5">Richard McClintock, a Latin:</h3>
             <p>Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-              Aldus PageMaker including versions of Lorem IpsumLetraset</p>
+              Aldus PageMaker including versions of Lorem Ipsum Letraset</p>
           </div>
           <div class="col-lg rside">
-            <h2 class="subtitle">Versions of Lorem IpsumLetraset sheets</h2>
+            <h2 class="subtitle">Versions of Lorem Ipsum Letraset sheets</h2>
             <h3 class="h3green">Awill uncover many red alteration in some form, by injected</h3>
             <p class="pcheck">On the other hand, we denounce</p>
             <p class="pcheck">we denounce With righteous indignation</p>
@@ -427,7 +454,7 @@
               <h3 class="h3green">quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
                 explicabo.
                 Nemo enim ipsam voluptatem quia</h3>
-              <div class="text-center">
+              <div id="videos">
                 <iframe width="280" height="200" src="https://www.youtube.com/embed/Ejkb_YpuHWs" frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen></iframe>
@@ -440,7 +467,7 @@
               </div>
             </div>
             <div class="col-lg rside">
-              <h2 class="subtitle">Versions of Lorem IpsumLetraset sheets</h2>
+              <h2 class="subtitle">Versions of Lorem Ipsum Letraset sheets</h2>
               <h3 class="subtitle2">Awill uncover many red alteration in some form, by injected</h3>
               <ul class="list">
                 <li class="item">
@@ -497,7 +524,7 @@
         </div>
 
         <div class="modal-header bmModalHeader">
-          <h5 class="bmModalTitle mt-4" id="exampleModalLabel">NÃO SAIA AINDA! PREPARAMOS UM PRESENTE ESPECIAL PARA VOCÊ!</h5>
+          <h5 class="bmModalTitle mt-4" id="exampleModalLabel">PREPARAMOS UM PRESENTE ESPECIAL PARA VOCÊ!</h5>
           <!--<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
         </div> 
         <form id="formPresente">
@@ -515,7 +542,7 @@
                 <input type="text" class="form-control" id="cpf" maxlength="14" autocomplete="off" required>
               </div> 
           </div>
-          <div class="modal-footer bmModalFooter">
+          <div class="modal-footer bmModalFooter mb-3">
             <button type="submit" class="btn btn-primary btn-Inscricao-BM">CONCLUIR INSCRIÇÃO</button>
           </div>
         </form>
