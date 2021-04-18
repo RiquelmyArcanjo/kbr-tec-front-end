@@ -1,0 +1,22 @@
+.cadastrado .passos .greenAreaInscricao:nth-child(3) {
+    background-color: $bgGreen;
+    #passo2{
+      color: $bgBlack; 
+    }
+}
+.cadastrado .passos .greenAreaInscricao:nth-child(5) {
+    background-color: $bgGreen;
+    #passo3{
+      color: $bgBlack; 
+    }
+}
+#gifCadastro{
+  width: 100%;
+    border-radius: 5px;
+}
+#msgCadastroConfirmado{
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 15px;
+}

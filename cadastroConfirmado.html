@@ -40,7 +40,7 @@
     <div class="greenAreaInscricaoOut"></div>
   </div>
   <main>
-    <section class="cadastro">   
+    <section class="cadastro cadastrado"><!-- .cadastrado altera cores dos passos -->   
       <div class="passos d-flex justify-content-between pt-3">
         <div class="greenAreaInscricao" id="ShapePasso1"><span id="passo1">.01</span></div>
         <div class="reticencias"></div>
@@ -48,56 +48,21 @@
         <div class="reticencias"></div>
         <div class="greenAreaInscricao" id="ShapePasso3"><span id="passo3">.03</span></div>
       </div>
-      <h2 class="subtitle text-center mt-5">CRIE <b>SUA CONTA</b></h2>
+      <h2 class="subtitle text-center mt-5">CADASTRO REALIZADO!</h2>
 
-      <form name="formCadastro" action="cadastroConfirmado.html" method="get" class="mt-5">
-        <div class="mb-5">
-          <label for="nome" id="lblNome" class="form-label text-white">NOME COMPLETO</label>
-          <input type="text" class="form-control" id="nome" minlength="2" maxlength="75" placeholder="EX: Diego Ribeiro" autocomplete="off" onkeyup="validaNome()" required>
-          <small id="validaNomeMsg"></small>
-        </div>
-        <div class="mb-5">
-          <label for="email" id="lblEmail" class="form-label text-white">E-MAIL</label>
-          <input type="email" class="form-control" id="email" maxlength="50" placeholder="EX: diegoribeiro@gmail.com" autocomplete="off" onkeyup="validaEmail()" required> 
-          <small id="validaEmailMsg"></small>
-        </div>
-        <div class="mb-5">
-          <label for="celular" id="lblCelular" class="form-label text-white">CELULAR</label>
-          <input type="text" class="form-control" id="celular" maxlength="11" placeholder="EX: 1399999999" autocomplete="off" onkeyup="validaCelular()" required> 
-          <small id="validaCelularMsg"></small>
-        </div>
-        <div class="mb-5">
-          <label for="cpf" id="lblCPF" class="form-label text-white">CPF</label>
-          <input type="text" class="form-control" id="cpf" minlength="11" maxlength="11" placeholder="EX: 00000000000" autocomplete="off" onkeyup="validaCPF(this.value)"required>
-          <small id="validaCPFMsg"></small>
-        </div>
-        <div class="mb-5">
-          <label for="estado" id="lblEstado" class="form-label text-white">ESTADO</label>
-          <select id="estado" name="estado" required>
-            <option value="" disabled selected>Selecione o estado</option>
-            <option value="estadoTeste">Um estado</option>
-          </select>
-          <small id="validaEstadoMsg"></small>
-        </div>
-
-        <div class="mb-5">
-          <label for="cidade" id="lblCidade" class="form-label text-white">CIDADE </label>
-          <select id="cidade" name="cidade" required>
-            <option value="" disabled selected>Selecione a cidade</option>
-            <option value="cidadeTeste">Uma cidade</option>
-          </select>
-          <small id="validaCidadeMsg"></small>
-        </div>
-
-        <div class="d-flex justify-content-center">
-          <button type="submit" class="btn btn-primary btn-lg btn-BM" id="continuarP3" onclick="validaPassoDois()">Cadastrar</button>
-        </div>
-      </form>
-
-      <div class="greenAreaInscricaoOut"></div>
+      <p class="text-center text-white mb-4">Parabéns, você acaba de dar um passo importante para o seu sucesso profissional!</p>
+      
       <div class="d-flex justify-content-center">
-        <button class="btn btn-primary btn-lg btn-BM" id="continuarP2" onclick="validaPassoUm()">CONTINUAR</button>
-        <button class="btnVoltar mt-4" id="voltarP1" onclick="voltarPassoUm()">VOLTAR</button>
+        <img src="https://media.giphy.com/media/SwImQhtiNA7io/giphy.gif" id="gifCadastro" alt="">
+      </div>
+
+      <p id="msgCadastroConfirmado">A equipe Business Market irá entrar em contato com você dentro de 24 horas.</p>
+      <!--<div class="greenAreaInscricaoOut"></div>-->
+      <div class="d-flex justify-content-center mt-5">
+        <a href="index.html">
+          <button class="btn btn-primary btn-lg btn-BM">VOLTAR AO INÍCIO</button>
+        </a>
+        
       </div>
     </section>
   </main>

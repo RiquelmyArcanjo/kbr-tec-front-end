@@ -14,8 +14,8 @@ var msgNome = document.getElementById("validaNomeMsg");
 var msgEmail = document.getElementById("validaEmailMsg"); 
 var msgCelular = document.getElementById("validaCelularMsg");
 var msgCPF = document.getElementById("validaCPFMsg");
-var msgCidade = document.getElementById("validaCidadeMsg");
 var msgEstado = document.getElementById("validaEstadoMsg");
+var msgCidade = document.getElementById("validaCidadeMsg");
 
 //Para checar se a validade == true
 var nomeValido = false;
@@ -208,6 +208,21 @@ function validaPassoUm(){
 
   if(document.getElementById("celular").value == "")
     msgCelular.innerText= "Preencha com o seu número de celular";
+  } 
+  
+}
+function validaPassoDois(){
+  if(CPFValido/* && estadoValido && cidadeValida*/)
+    alert('REDIRECIONAR PARA CADASTRO REALIZADO')
+  else{
+  if(document.getElementById("cpf").value == "")
+    msgCPF.innerText= "Preencha com o seu cpf!";
+
+  if(document.getElementById("estado").value == "")
+    msgEstado.innerText= "Selecione o estado!";
+
+  if(document.getElementById("cidade").value == "")
+    msgCidade.innerText= "Selecione a cidade!";
   } 
   
 }
