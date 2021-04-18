@@ -53,22 +53,22 @@
       <form name="formCadastro" action="cadastroConfirmado.html" method="get" class="mt-5">
         <div class="mb-5">
           <label for="nome" id="lblNome" class="form-label text-white">NOME COMPLETO</label>
-          <input type="text" class="form-control" id="nome" minlength="2" maxlength="75" placeholder="EX: Diego Ribeiro" autocomplete="off" onkeyup="validaNome()" required>
+          <input type="text" class="form-control inputCadastro" id="nome" minlength="2" maxlength="75" placeholder="EX: Diego Ribeiro" autocomplete="off" onkeyup="validaNome()" required>
           <small id="validaNomeMsg"></small>
         </div>
         <div class="mb-5">
           <label for="email" id="lblEmail" class="form-label text-white">E-MAIL</label>
-          <input type="email" class="form-control" id="email" maxlength="50" placeholder="EX: diegoribeiro@gmail.com" autocomplete="off" onkeyup="validaEmail()" required> 
+          <input type="email" class="form-control inputCadastro" id="email" maxlength="50" placeholder="EX: diegoribeiro@gmail.com" autocomplete="off" onkeyup="validaEmail()" required> 
           <small id="validaEmailMsg"></small>
         </div>
         <div class="mb-5">
           <label for="celular" id="lblCelular" class="form-label text-white">CELULAR</label>
-          <input type="text" class="form-control" id="celular" maxlength="11" placeholder="EX: 1399999999" autocomplete="off" onkeyup="validaCelular()" required> 
+          <input type="text" class="form-control inputCadastro" id="celular" maxlength="11" placeholder="EX: 1399999999" autocomplete="off" onkeyup="validaCelular()" required> 
           <small id="validaCelularMsg"></small>
         </div>
         <div class="mb-5">
           <label for="cpf" id="lblCPF" class="form-label text-white">CPF</label>
-          <input type="text" class="form-control" id="cpf" minlength="11" maxlength="11" placeholder="EX: 00000000000" autocomplete="off" onkeyup="validaCPF(this.value)"required>
+          <input type="text" class="form-control inputCadastro" id="cpf" minlength="11" maxlength="11" placeholder="EX: 00000000000" autocomplete="off" onkeyup="validaCPF(this.value)"required>
           <small id="validaCPFMsg"></small>
         </div>
         <div class="mb-5">

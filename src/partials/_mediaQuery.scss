@@ -115,6 +115,9 @@
     #outShapes, footer .greenAreaInscricaoOut:nth-child(1), footer .greenAreaInscricaoOut:nth-last-child(2), .cadastro .greenAreaInscricaoOut{
         display: none;
     }
+    .fundoContainer2 .btn-BM{
+        margin-bottom: 0;
+      }
     .gap-2{
         margin-left:auto;
         margin-right:auto;
@@ -128,4 +131,5 @@
         padding: 0;
         border-radius: 0;
     }
+    
 }

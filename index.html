@@ -530,16 +530,19 @@
         <form id="formPresente">
           <div class="modal-body">  
               <div class="mb-3">
-                <label for="nome" class="form-label">Seu nome:</label>
-                <input type="text" class="form-control" id="nome" required> 
+                <label for="nome" id="lblNomeModal" class="form-label">SEU NOME:</label>
+                <input type="text" class="form-control inputCadastroModal" id="nomeModal" minlength="2" maxlength="75" autocomplete="off" onkeyup="validaNome()" required>
+                <small id="validaNomeModalMsg"></small>
               </div>
               <div class="mb-3">
-                <label for="telefone" class="form-label">Telefone:</label>
-                <input type="text" class="form-control" id="telefone" maxlength="10" required>
+                <label for="telefone" class="form-label">TELEFONE:</label>
+                <input type="text" class="form-control inputCadastroModal" id="telefoneModal" maxlength="10" required>
+                <small id="validaTelefoneModalMsg"></small>
               </div>
               <div class="mb-3">
-                <label for="cpf" class="form-label">CPF:</label>
-                <input type="text" class="form-control" id="cpf" maxlength="14" autocomplete="off" required>
+                <label for="cpf" id="lblCPFModal" class="form-label">CPF:</label>
+                <input type="text" class="form-control inputCadastroModal" id="cpfModal" minlength="11" maxlength="11" autocomplete="off" onkeyup="validaCPF(this.value)"required>
+                <small id="validaCPFModalMsg"></small>
               </div> 
           </div>
           <div class="modal-footer bmModalFooter mb-3">

@@ -1,15 +1,29 @@
 //inputs
-.form-control{
+.inputCadastro{
     border: none;
     border-bottom: 1px solid #ccc;
     border-radius: 0;
     background-color: transparent;
 }
-.form-control:focus {
-    color: #fff;
+.inputCadastro:focus {
     background-color: transparent;
     border-color: transparent;
     border-bottom: 1px solid $bgGreen;
+    outline: 0;
+    box-shadow: none;
+    
+}
+.inputCadastroModal{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    background-color: transparent;
+}
+.inputCadastroModal:focus {
+    color: $bgBlack;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom: 1px solid #ccc;
     outline: 0;
     box-shadow: none;
     
