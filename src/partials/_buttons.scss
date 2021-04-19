@@ -3,29 +3,56 @@
     @include btn-BM2;
     position: relative;
     z-index:10;
+
+    transition: all 0.7s;
+    cursor: pointer;
 }
+.btn-info-BM:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+
+    -webkit-filter: drop-shadow(0px 10px 5px rgba(119, 119, 119, 0.5));
+    filter: drop-shadow(0px 10px 5px rgba(119, 119, 119, 0.5));
+}
+
 .btn-BM{
-    color: black;
+    color: $bgBlack;
     background: $bgGreen;
     border-radius: 30px;
     border: none;
-
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: bold;
     font-size: 15px;
     line-height: 250.0%;
-
     letter-spacing: 0.1em;
     text-transform: uppercase;
 
+    transition: all 0.7s;
+    cursor: pointer;
+}
+.btn-BM:hover{
+    background: $bgGreen;
     color: $bgBlack;
+
+    transition: opacity 0.3s ease 0s;
+    opacity: 0.7;
 }
 .btn-Inscricao-BM{
     @include btn-BM2;
     color: white;
     margin-inline:auto;
+
+    transition: all 0.7s;
+    cursor: pointer;
+}
+.btn-Inscricao-BM:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    
+    -webkit-filter: drop-shadow(0px 10px 5px rgba(119, 119, 119, 0.5));
+    filter: drop-shadow(0px 10px 5px rgba(119, 119, 119, 0.5));
 }
 .fundoContainer2 .btn-BM{
     margin-bottom: 100px;
-  }
+}
