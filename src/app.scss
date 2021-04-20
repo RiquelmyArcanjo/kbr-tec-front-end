@@ -16,3 +16,48 @@
 @import 'partials/formCadastro';
 @import 'partials/formCadastrado';
 @import 'partials/mediaQuery';
+
+.person, .price1, .price2, .item{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.person:hover, .price1:hover, .price2:hover, .item:hover{
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+.facebook, .instagram, .twitter, .businessIcon, .figure-img, .dollar{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.facebook:hover, .instagram:hover, .twitter:hover, .businessIcon:hover, .figure-img:hover, .dollar:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.liYears{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.liYears:hover{
+    margin-left: 25px;
+}
+.step .greenAreaInscricao{
+    transition: all 0.7s;
+    cursor: pointer;
+}
+.step .greenAreaInscricao:hover{
+    background-color: $bgBlack;
+    color: white;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transform: rotate(405deg);
+}
+#money{
+    transition: all 0.7s;
+    cursor: pointer;
+}
+#money:hover{
+    transform: rotate(360deg);
+}

@@ -23,7 +23,7 @@
   <!--JS-->
   <script src="dist/masks.js"></script>
 </head>
-<body>
+<body id="indexBody">
   <header>
     <nav class="navbar navbar-expand navbar-light p-0">
       <div class="container-fluid p-0">
@@ -71,12 +71,12 @@
               <div class="d-flex justify-content-center">
                 <img src="src/img/person.png" class="img-fluid person" alt="homem sorrindo">
                 <div class="social">
-                  <a href=""><img src="src/img/facebook.png" class="facebook" alt="Logo do Facebook"
-                      title="Acesso o nosso Facebook"></a>
-                  <a href=""><img src="src/img/instagram.png" class="instagram" alt="Logo do Instagram"
-                      title="Acesso o nosso Instagram"></a>
-                  <a href=""><img src="src/img/twitter.png" class="twitter" alt="Logo do Twitter"
-                      title="Acesso o nosso Twitter"></a>
+                  <a href="https://www.facebook.com/kbrtec" target="_blank"><img src="src/img/facebook.png" class="facebook" alt="Logo do Facebook"
+                      title="Acesse o nosso Facebook"></a>
+                  <a href="https://www.instagram.com/kbrtec/" target="_blank"><img src="src/img/instagram.png" class="instagram" alt="Logo do Instagram"
+                      title="Acesse o nosso Instagram"></a>
+                  <a href="https://twitter.com/kbrtec" target="_blank"><img src="src/img/twitter.png" class="twitter" alt="Logo do Twitter"
+                      title="Acesse o nosso Twitter"></a>
                 </div>
               </div>
 
@@ -160,32 +160,41 @@
 
             <ul class="timeline">
               <li class="event mb-5">
-                <h3 class="subtitle2 year">2018</h3>
-                <div class="timelineDesc">
-                  <div class="timelineText">Lorem Ipsum Dolor</div>
-                  <div class="timelinePrice">R$ 15.000,00</div>
+                <div class="liYears">
+                  <h3 class="subtitle2 year">2018</h3>
+                  <div class="timelineDesc">
+                    <div class="timelineText">Lorem Ipsum Dolor</div>
+                    <div class="timelinePrice">R$ 15.000,00</div>
+                  </div>
                 </div>
               </li>
-              <li class="event mb-5">
-                <h3 class="subtitle2 year">2015</h3>
-                <div class="timelineDesc">
-                  <div class="timelineText">Lorem Ipsum Dolor</div>
-                  <div class="timelinePrice">R$ 6.000,00</div>
+            
+              <li class="event mb-5"> 
+                <div class="liYears">     
+                  <h3 class="subtitle2 year">2015</h3>
+                  <div class="timelineDesc">
+                    <div class="timelineText">Lorem Ipsum Dolor</div>
+                    <div class="timelinePrice">R$ 6.000,00</div>
+                  </div>
                 </div>
-
               </li>
+            
               <li class="event mb-5">
-                <h3 class="subtitle2 year">2010</h3>
-                <div class="timelineDesc">
-                  <div class="timelineText">Lorem Ipsum Dolor</div>
-                  <div class="timelinePrice">R$ 2.000,00</div>
+                <div class="liYears">
+                  <h3 class="subtitle2 year">2010</h3>
+                  <div class="timelineDesc">
+                    <div class="timelineText">Lorem Ipsum Dolor</div>
+                    <div class="timelinePrice">R$ 2.000,00</div>
+                  </div>
                 </div>
               </li>
               <li class="event">
-                <h3 class="subtitle2 year">2008</h3>
-                <div class="timelineDesc">
-                  <div class="timelineText">Lorem Ipsum Dolor</div>
-                  <div class="timelinePrice">R$ 800,00</div>
+                <div class="liYears">
+                  <h3 class="subtitle2 year">2008</h3>
+                  <div class="timelineDesc">
+                    <div class="timelineText">Lorem Ipsum Dolor</div>
+                    <div class="timelinePrice">R$ 800,00</div>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -300,7 +309,7 @@
             <div class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
           </li>
       </div>
-      <div class="step inscricao">
+      <div class="inscricao d-flex justify-content-center">
         <div class="d-grid gap-2 w-50">
           <a href="cadastro.html" class="btn btn-primary btn-lg btn-BM" role="button" aria-disabled="true">inscreva-se</a>
         </div>
@@ -391,7 +400,7 @@
         </div>
         <div class="row mt-5">
           <div class="col-lg">
-            <div class="prices">
+            <div class="price1">
               <div class="left-price text-center pt-4">
                 <div class="desc-price-l">
                   Lorem Ipsum has been the industry's
@@ -403,7 +412,7 @@
             </div>
           </div>
           <div class="col-lg">
-            <div class="prices">
+            <div class="price2">
               <div class="right-price text-center pt-4">
                 <div class="desc-price-r">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit

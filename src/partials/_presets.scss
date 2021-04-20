@@ -1,7 +1,13 @@
 //presets
 body{
-    background: $gradHome;
+    
     overflow-x: hidden;
+}
+#indexBody{
+    background: $gradHome;
+}
+#cadastroBody{
+    background: $gradCadastro;
 }
 h1,h2,p{
     margin-bottom: 30px;
