@@ -190,13 +190,20 @@ function validaPassoUm(){
   
 }
 function validaPassoDois(){
-  if(CPFValido)
-    window.location.href = "cadastroConfirmado.html";
-  else{
-    if(document.getElementById("cpf").value == "")
-      msgCPF.innerText= "Preencha com o seu CPF!";
-  }
 
+  if(document.getElementById("cpf").value == "")
+    msgCPF.innerText= "Preencha com o seu CPF!";
+
+  if(document.getElementById("estado").value == "0")
+    msgEstado.innerText= "Selecione o estado!"
+  else
+    estadoValido = true;
   
+  if(document.getElementById("cidade").value == "0")
+    msgCidade.innerText= "Selecione a cidade!";
+  else
+    cidadeValida = true;
   
+  if(CPFValido && estadoValido && cidadeValida)
+    window.location.href = "cadastroConfirmado.html";  
 }
