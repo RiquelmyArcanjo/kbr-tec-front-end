@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <!--Meta tags-->
   <meta charset="UTF-8">
@@ -10,7 +11,7 @@
   <meta name="author" content="Riquelmy Arcanjo de Araújo">
   <!--CSS-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <link rel="stylesheet" href="dist/app.css">
   <!--Google Fonts-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,12 +19,14 @@
     href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600&family=Oswald:wght@200;700&family=Source+Sans+Pro:wght@700&display=swap"
     rel="stylesheet">
   <!--JQuery-->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="dist/jquery.mask.min.js"></script>
   <!--JS-->
   <script src="dist/masks.js"></script>
-  
+
 </head>
+
 <body id="cadastroBody">
   <header>
     <!--navPadrao-->
@@ -31,20 +34,22 @@
       <div class="container-fluid p-0">
         <div class="greenAreaHeader">
           <a href="index.html">
-            <div class="imagem"></div>  
-              <img src="src/img/logo3.png" id="logoHeader" alt="Logo Business Market">   
+            <div class="imagem"></div>
+            <img src="src/img/logo3.png" id="logoHeader" alt="Logo Business Market">
           </a>
-        </div>  
+        </div>
       </div>
     </nav>
     <!--navMobile-->
     <nav class="navbar navbar-expand-lg navbar-dark navColor navMobile">
       <div class="container-fluid">
         <a class="navbar-brand fontHeader d-flex align-items-center" href="index.html">
-          <img src="src/img/logo2.png" alt="Logo Business Market" id="logoHeaderMobile" width="50" class="d-inline-block align-text-top">
-          <div class="textoLogoHeader">Business Market</div> 
+          <img src="src/img/logo2.png" alt="Logo Business Market" id="logoHeaderMobile" width="50"
+            class="d-inline-block align-text-top">
+          <div class="textoLogoHeader">Business Market</div>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -54,7 +59,7 @@
           </div>
         </div>
       </div>
-    </nav>  
+    </nav>
   </header>
   <div id="outShapes">
     <div class="greenAreaInscricaoOut"></div>
@@ -63,7 +68,7 @@
     <div class="greenAreaInscricaoOut"></div>
   </div>
   <main>
-    <section class="cadastro">   
+    <section class="cadastro">
       <div class="passos d-flex justify-content-between pt-3">
         <div class="greenAreaInscricao" id="ShapePasso1"><span id="passo1">.01</span></div>
         <div class="reticencias"></div>
@@ -76,38 +81,45 @@
       <form name="formCadastro" action="cadastroConfirmado.html" method="get" class="mt-5">
         <div class="mb-5">
           <label for="nome" id="lblNome" class="form-label text-white">NOME COMPLETO</label>
-          <input type="text" class="form-control inputCadastro" id="nome" minlength="2" maxlength="75" placeholder="EX: Diego Ribeiro" autocomplete="off" onkeyup="validaNome()" required>
+          <input type="text" class="form-control inputCadastro" id="nome" minlength="2" maxlength="75"
+            placeholder="EX: Diego Ribeiro" autocomplete="off" onkeyup="validaNome()" required>
           <small id="validaNomeMsg"></small>
         </div>
         <div class="mb-5">
           <label for="email" id="lblEmail" class="form-label text-white">E-MAIL</label>
-          <input type="email" class="form-control inputCadastro" id="email" maxlength="50" placeholder="EX: diegoribeiro@gmail.com" autocomplete="off" onkeyup="validaEmail()" required> 
+          <input type="email" class="form-control inputCadastro" id="email" maxlength="50"
+            placeholder="EX: diegoribeiro@gmail.com" autocomplete="off" onkeyup="validaEmail()" required>
           <small id="validaEmailMsg"></small>
         </div>
         <div class="mb-5">
           <label for="celular" id="lblCelular" class="form-label text-white">CELULAR</label>
-          <input type="text" class="form-control inputCadastro" id="celular" maxlength="11" placeholder="EX: 1399999999" autocomplete="off" onkeyup="validaCelular()" required> 
+          <input type="text" class="form-control inputCadastro" id="celular" maxlength="11" placeholder="EX: 1399999999"
+            autocomplete="off" onkeyup="validaCelular()" required>
           <small id="validaCelularMsg"></small>
         </div>
         <div class="mb-5">
           <label for="cpf" id="lblCPF" class="form-label text-white">CPF</label>
-          <input type="text" class="form-control inputCadastro" id="cpf" minlength="11" maxlength="11" placeholder="EX: 00000000000" autocomplete="off" onkeyup="validaCPF(this.value)" required>
+          <input type="text" class="form-control inputCadastro" id="cpf" minlength="11" maxlength="11"
+            placeholder="EX: 00000000000" autocomplete="off" onkeyup="validaCPF(this.value)" required>
           <small id="validaCPFMsg"></small>
         </div>
         <div class="mb-5">
           <label for="estado" id="lblEstado" class="form-label text-white">ESTADO</label>
-          <input type="text" class="form-control inputCadastro" id="estado" minlength="1" maxlength="40" placeholder="EX: São Paulo" autocomplete="off" onkeyup="validaEstado()" required>
+          <input type="text" class="form-control inputCadastro" id="estado" minlength="1" maxlength="40"
+            placeholder="EX: São Paulo" autocomplete="off" onkeyup="validaEstado()" required>
           <small id="validaEstadoMsg"></small>
         </div>
 
         <div class="mb-5">
           <label for="cidade" id="lblCidade" class="form-label text-white">CIDADE </label>
-          <input type="text" class="form-control inputCadastro" id="cidade" minlength="1" maxlength="60" placeholder="EX: Santos" autocomplete="off" onkeyup="validaCidade()" required>
+          <input type="text" class="form-control inputCadastro" id="cidade" minlength="1" maxlength="60"
+            placeholder="EX: Santos" autocomplete="off" onkeyup="validaCidade()" required>
           <small id="validaCidadeMsg"></small>
         </div>
 
         <div class="d-flex justify-content-center">
-          <button type="button" class="btn btn-primary btn-lg btn-BM" id="continuarP3" onclick="validaPassoDois()">Cadastrar</button>
+          <button type="button" class="btn btn-primary btn-lg btn-BM" id="continuarP3"
+            onclick="validaPassoDois()">Cadastrar</button>
         </div>
       </form>
 
@@ -118,7 +130,7 @@
       </div>
     </section>
   </main>
-  
+
   <footer class="footer pt-3 pb-3">
     <div class="greenAreaInscricaoOut"></div>
     <div class="greenAreaInscricaoOut"></div>
@@ -129,7 +141,9 @@
   </footer>
 
   <!--JS-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
   <script src="dist/cadastro.js"></script>
 </body>
 

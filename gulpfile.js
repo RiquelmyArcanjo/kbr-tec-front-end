@@ -18,17 +18,20 @@ gulp.task('styles', function(){
     .pipe(gulp.dest(paths.dist));
 });
 
+ 
+/*gulp.task('reduceImg', function () {
+  gulp.src('src/img/*')
+    .pipe(image())
+    .pipe(gulp.dest('src/img/'));
+});*/
+
 gulp.task('watch', function() {
     gulp.watch('src/**/*.scss', gulp.series('styles'));
     //posso add + aqui
 });
 
-// Default Task
-gulp.task('default', gulp.parallel('styles', 'watch'));
 
- /*
-gulp.task('default', function () {
-  gulp.src('src/img/*')
-    .pipe(image())
-    .pipe(gulp.dest('src/img/'));
-});*/
+// Default Task
+gulp.task('default', gulp.parallel('styles', /*'reduceImg',*/'watch'));
+
+
