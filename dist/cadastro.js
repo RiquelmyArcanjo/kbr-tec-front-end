@@ -131,6 +131,29 @@ function validaCPF(cpf) {
   return true
 }
 
+function validaEstado(){
+  var inputEstado = document.getElementById("estado").value;
+  if(!inputEstado.match(/^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$/)){
+    msgEstado.innerText = "Preencha o estado corretamente!";
+    estadoValido = false;
+  }
+  else{
+    msgEstado.innerText = "";
+    estadoValido = true;
+  }
+}
+function validaCidade(){
+  var inputCidade = document.getElementById("cidade").value;
+  if(!inputCidade.match(/^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$/)){
+    msgCidade.innerText = "Preencha a cidade corretamente!";
+    cidadeValida = false;
+  }
+  else{
+    msgCidade.innerText = "";
+    cidadeValida = true;
+  }
+}
+
 function continuarPassoDois(){
     ShapePasso2.style.backgroundColor="#C2FF01";
     passo2.style.color="black";
@@ -151,6 +174,10 @@ function continuarPassoDois(){
     cpf.style.display="block";
     estado.style.display="block";
     cidade.style.display="block";
+
+    validaCPFMsg.style.display="block";
+    validaEstadoMsg.style.display="block";
+    validaCidadeMsg.style.display="block";
 }
   
 function voltarPassoUm(){
@@ -172,6 +199,10 @@ function voltarPassoUm(){
     cpf.style.display="none";
     estado.style.display="none";
     cidade.style.display="none";
+
+    validaCPFMsg.style.display="none";
+    validaEstadoMsg.style.display="none";
+    validaCidadeMsg.style.display="none";
 }
 
 function validaPassoUm(){
@@ -190,20 +221,20 @@ function validaPassoUm(){
   
 }
 function validaPassoDois(){
-
-  if(document.getElementById("cpf").value == "")
-    msgCPF.innerText= "Preencha com o seu CPF!";
-
-  if(document.getElementById("estado").value == "0")
-    msgEstado.innerText= "Selecione o estado!"
-  else
-    estadoValido = true;
-  
-  if(document.getElementById("cidade").value == "0")
-    msgCidade.innerText= "Selecione a cidade!";
-  else
-    cidadeValida = true;
-  
   if(CPFValido && estadoValido && cidadeValida)
     window.location.href = "cadastroConfirmado.html";  
+  else{
+    if(document.getElementById("cpf").value == "")
+      msgCPF.innerText= "Preencha com o seu CPF!";
+
+    if(document.getElementById("estado").value == "")
+      msgEstado.innerText= "Preencha com o seu estado!"
+
+    if(document.getElementById("cidade").value == "")
+      msgCidade.innerText= "Preencha com a sua cidade!";
+  }
+
+
+  
+
 }

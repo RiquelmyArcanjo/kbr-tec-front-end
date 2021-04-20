@@ -91,24 +91,18 @@
         </div>
         <div class="mb-5">
           <label for="cpf" id="lblCPF" class="form-label text-white">CPF</label>
-          <input type="text" class="form-control inputCadastro" id="cpf" minlength="11" maxlength="11" placeholder="EX: 00000000000" autocomplete="off" onkeyup="validaCPF(this.value)"required>
+          <input type="text" class="form-control inputCadastro" id="cpf" minlength="11" maxlength="11" placeholder="EX: 00000000000" autocomplete="off" onkeyup="validaCPF(this.value)" required>
           <small id="validaCPFMsg"></small>
         </div>
         <div class="mb-5">
           <label for="estado" id="lblEstado" class="form-label text-white">ESTADO</label>
-          <select id="estado" name="estado" required>
-            <option value="0" disabled selected>Selecione o estado</option>
-            <option value="estadoTeste">Um estado</option>
-          </select>
+          <input type="text" class="form-control inputCadastro" id="estado" minlength="1" maxlength="40" placeholder="EX: São Paulo" autocomplete="off" onkeyup="validaEstado()" required>
           <small id="validaEstadoMsg"></small>
         </div>
 
         <div class="mb-5">
           <label for="cidade" id="lblCidade" class="form-label text-white">CIDADE </label>
-          <select id="cidade" name="cidade" required>
-            <option value="0" disabled selected>Selecione a cidade</option>
-            <option value="cidadeTeste">Uma cidade</option>
-          </select>
+          <input type="text" class="form-control inputCadastro" id="cidade" minlength="1" maxlength="60" placeholder="EX: Santos" autocomplete="off" onkeyup="validaCidade()" required>
           <small id="validaCidadeMsg"></small>
         </div>
 
