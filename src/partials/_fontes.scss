@@ -73,3 +73,9 @@
         color: $bgGreen;
     }
   }
+.textoLogoHeader{
+    @include tipografia-Oswald;
+    font-size: 24px;
+    margin-left: 10px;
+    color: #fff;
+}

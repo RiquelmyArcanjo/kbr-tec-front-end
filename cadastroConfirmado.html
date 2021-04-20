@@ -24,14 +24,37 @@
   <script src="dist/masks.js"></script>
   
 </head>
-<body>
+<body id="cadastradoBody">
   <header>
-      <div class="greenAreaHeader">
-        <a href="index.html">
-          <div class="imagem"></div>  
-            <img src="src/img/logo3.png" id="logoHeader" alt="Logo Business Market">   
+    <!--navPadrao-->
+    <nav class="navbar navbar-expand navbar-light p-0 navPadrao">
+      <div class="container-fluid p-0">
+        <div class="greenAreaHeader">
+          <a href="index.html">
+            <div class="imagem"></div>  
+              <img src="src/img/logo3.png" id="logoHeader" alt="Logo Business Market">   
+          </a>
+        </div>  
+      </div>
+    </nav>
+    <!--navMobile-->
+    <nav class="navbar navbar-expand-lg navbar-dark navColor navMobile">
+      <div class="container-fluid">
+        <a class="navbar-brand fontHeader d-flex align-items-center" href="index.html">
+          <img src="src/img/logo2.png" alt="Logo Business Market" id="logoHeaderMobile" width="50" class="d-inline-block align-text-top">
+          <div class="textoLogoHeader">Business Market</div> 
         </a>
-      </div>   
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <!--<a href="#" class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal" role="button" aria-disabled="true">MAIS INFORMAÇÕES</a>-->
+            <a class="nav-link fw-bold" href="cadastro.html">INSCREVA-SE</a>
+          </div>
+        </div>
+      </div>
+    </nav>    
   </header>
   <div id="outShapes">
     <div class="greenAreaInscricaoOut"></div>

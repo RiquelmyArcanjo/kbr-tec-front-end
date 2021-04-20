@@ -174,28 +174,6 @@ function voltarPassoUm(){
     cidade.style.display="none";
 }
 
-  function continuarPassoTres(){
-    ShapePasso3.style.backgroundColor="#C2FF01";
-    passo3.style.color="black";
-    lblNome.style.display="none";
-    nome.style.display="none";
-    lblEmail.style.display="none";
-    email.style.display="none";
-    lblCelular.style.display="none";
-    celular.style.display="none";
-
-    continuarP2.style.display="none";
-    voltarP1.style.display="none";
-    continuarP3.style.display="none";
-
-    lblCPF.style.display="none";
-    lblEstado.style.display="none";
-    lblCidade.style.display="none";
-    cpf.style.display="none";
-    estado.style.display="none";
-    cidade.style.display="none";
-}
-
 function validaPassoUm(){
   if(nomeValido && emailValido && celularValido)
     continuarPassoDois();
@@ -212,7 +190,7 @@ function validaPassoUm(){
   
 }
 function validaPassoDois(){
-  if(CPFValido/* && estadoValido && cidadeValida*/)
+  if(CPFValido && estadoValido && cidadeValida)
     alert('REDIRECIONAR PARA CADASTRO REALIZADO')
   else{
   if(document.getElementById("cpf").value == "")
