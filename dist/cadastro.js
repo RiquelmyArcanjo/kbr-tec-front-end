@@ -190,17 +190,13 @@ function validaPassoUm(){
   
 }
 function validaPassoDois(){
-  if(CPFValido && estadoValido && cidadeValida)
-    alert('REDIRECIONAR PARA CADASTRO REALIZADO')
+  if(CPFValido)
+    window.location.href = "cadastroConfirmado.html";
   else{
-  if(document.getElementById("cpf").value == "")
-    msgCPF.innerText= "Preencha com o seu cpf!";
+    if(document.getElementById("cpf").value == "")
+      msgCPF.innerText= "Preencha com o seu CPF!";
+  }
 
-  if(document.getElementById("estado").value == "")
-    msgEstado.innerText= "Selecione o estado!";
-
-  if(document.getElementById("cidade").value == "")
-    msgCidade.innerText= "Selecione a cidade!";
-  } 
+  
   
 }
